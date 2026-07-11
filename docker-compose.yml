@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - APP_ENV=production
+      - PORT=5000
+      - DATABASE_URL=sqlite:///initial.db
+      - SECRET_KEY=prod-secret-key-change-me-in-production
+      - JWT_SECRET=jwt-token-secret-change-me-in-production
+      - UPLOAD_FOLDER=uploads
+      - LOG_LEVEL=INFO
+    volumes:
+      - backend_data:/app/uploads
+      - backend_logs:/app/logs
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_data:
+  backend_logs:

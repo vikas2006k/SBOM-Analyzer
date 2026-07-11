@@ -1,0 +1,42 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "AuthService",
+  "documentNamespace": "http://spdx.org/spdxdocs/AuthService-1.2.0",
+  "creationInfo": {
+    "created": "2026-07-11T12:00:00Z"
+  },
+  "packages": [
+    {
+      "name": "AuthService",
+      "SPDXID": "SPDXRef-Package-AuthService",
+      "versionInfo": "1.2.0",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "jsonwebtoken",
+      "SPDXID": "SPDXRef-Package-jsonwebtoken",
+      "versionInfo": "9.0.0",
+      "licenseDeclared": "MIT"
+    },
+    {
+      "name": "ms",
+      "SPDXID": "SPDXRef-Package-ms",
+      "versionInfo": "2.1.3",
+      "licenseDeclared": "MIT"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-AuthService",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-jsonwebtoken"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-jsonwebtoken",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-ms"
+    }
+  ]
+}

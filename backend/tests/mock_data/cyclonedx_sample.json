@@ -1,0 +1,77 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3e078330-01de-11ed-861d-0242ac120002",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-11T12:00:00Z",
+    "component": {
+      "group": "com.enterprise",
+      "name": "PaymentGateway",
+      "version": "1.0.0",
+      "type": "application"
+    }
+  },
+  "components": [
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-web",
+      "version": "3.1.2",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "name": "Apache License 2.0"
+          }
+        }
+      ]
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.15.2",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-core",
+      "version": "2.17.1",
+      "type": "library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:maven/com.enterprise/PaymentGateway@1.0.0",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.2",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
+      "dependsOn": [
+        "pkg:maven/org.apache.logging.log4j/log4j-core@2.17.1"
+      ]
+    }
+  ]
+}

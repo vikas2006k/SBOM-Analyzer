@@ -1,0 +1,5 @@
+library_name,version,ecosystem,license,parent_name,parent_version
+requests,2.31.0,pypi,Apache-2.0,,
+urllib3,2.0.7,pypi,MIT,requests,2.31.0
+idna,3.4,pypi,BSD-3-Clause,requests,2.31.0
+certifi,2023.7.22,pypi,MPL-2.0,requests,2.31.0

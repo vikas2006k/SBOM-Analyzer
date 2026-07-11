@@ -1,0 +1,31 @@
+# Python virtual environments & build artifacts
+venv/
+.venv/
+__pycache__/
+*.pyc
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+backend/app/services/__pycache__/
+backend/app/controllers/__pycache__/
+backend/app/models/__pycache__/
+backend/app/routes/__pycache__/
+backend/app/middlewares/__pycache__/
+backend/app/utils/__pycache__/
+
+# Local database and configuration secrets
+backend/*.db
+backend/initial.db
+backend/.env
+
+# Node package modules & React production bundles
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Application logs & user uploads folder
+backend/logs/*.log
+*.log
+backend/uploads/
+backend/app/uploads/
+.DS_Store
