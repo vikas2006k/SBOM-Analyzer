@@ -29,6 +29,15 @@ const SBOMUpload = () => {
     loadApps();
   }, []);
 
+  // Reset the audit log whenever the user picks a different application
+  const handleAppChange = (e) => {
+    setSelectedAppId(e.target.value);
+    setFile(null);
+    setStatus('');
+    setReport(null);
+    setErrorDetails(null);
+  };
+
   const handleFileChange = (e) => {
     if (e.target.files.length > 0) {
       setFile(e.target.files[0]);
@@ -71,20 +80,33 @@ const SBOMUpload = () => {
       // 2. Automatically trigger ingestion parsing pipeline
       setStatus('parsing');
       const parseRes = await sbomAPI.parseSBOM(stageData.upload_id);
+      // Store the full parseData so both libraries_imported AND validation_report are accessible
       const parseData = parseRes.data.data;
-      
-      setReport(parseData.validation_report || parseData);
+      setReport(parseData);
       setStatus('completed');
     } catch (err) {
       console.error("Ingestion failed:", err);
       const errorObj = err.response?.data?.error || {};
       const details = errorObj.details || {};
       const message = errorObj.message || "Internal Ingestion Parser Error.";
-      // Detect duplicate upload block vs real parse errors
+      // A structural validation FAILED parse returns errors inside details.errors
+      // A duplicate returns the message directly
       const isDuplicate = message.toLowerCase().includes("already processed");
-      setStatus(isDuplicate ? 'duplicate' : 'failed');
-      const errorsList = details.errors || [message];
-      setErrorDetails(errorsList);
+      if (isDuplicate) {
+        setStatus('duplicate');
+        setErrorDetails([message]);
+      } else {
+        setStatus('failed');
+        // Try to extract the structural validation errors from the nested report
+        const validationErrors = details.validation_report?.errors ||
+                                 details.errors ||
+                                 [message];
+        setErrorDetails(validationErrors);
+        // Also store the validation report if available so warnings are visible
+        if (details.validation_report) {
+          setReport(details);
+        }
+      }
     } finally {
       setLoading(false);
     }
@@ -108,7 +130,7 @@ const SBOMUpload = () => {
             <label className="text-xs text-slate-400 font-bold block mb-1.5 uppercase">Select Target Application</label>
             <select 
               value={selectedAppId}
-              onChange={(e) => setSelectedAppId(e.target.value)}
+              onChange={handleAppChange}
               className="w-full bg-cyber-darker border border-cyber-border text-slate-200 text-sm px-3 py-2 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 cursor-pointer"
             >
               {apps.map(app => (
@@ -197,23 +219,32 @@ const SBOMUpload = () => {
               <div className="space-y-2 pt-2 border-t border-cyber-border text-xs text-slate-350">
                 <div className="flex justify-between">
                   <span>Libraries Imported:</span>
-                  <span className="font-semibold text-slate-200">{report.metrics?.libraries_count || report.libraries_imported || 0}</span>
+                  <span className="font-semibold text-slate-200">
+                    {report.libraries_imported ?? report.validation_report?.metrics?.libraries_count ?? 0}
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Dependency Edges:</span>
-                  <span className="font-semibold text-slate-200">{report.metrics?.dependencies_count || 0}</span>
+                  <span className="font-semibold text-slate-200">
+                    {report.validation_report?.metrics?.dependencies_count ?? report.metrics?.dependencies_count ?? 0}
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Has Cycle Reference:</span>
-                  <span className="font-semibold text-slate-200">{report.metrics?.has_cycles ? 'YES' : 'NO'}</span>
+                  <span className="font-semibold text-slate-200">
+                    {(report.validation_report?.metrics?.has_cycles || report.metrics?.has_cycles) ? 'YES' : 'NO'}
+                  </span>
                 </div>
               </div>
 
-              {report.warnings?.length > 0 && (
+              {/* Validation warnings */}
+              {(report.validation_report?.warnings || report.warnings || []).length > 0 && (
                 <div className="mt-4 border-t border-cyber-border pt-4">
-                  <h4 className="text-xs text-amber-500 font-bold mb-2 uppercase tracking-wide">Warnings ({report.warnings.length})</h4>
+                  <h4 className="text-xs text-amber-500 font-bold mb-2 uppercase tracking-wide">
+                    Warnings ({(report.validation_report?.warnings || report.warnings || []).length})
+                  </h4>
                   <ul className="space-y-1 max-h-32 overflow-y-auto text-[11px] text-slate-400 list-disc list-inside">
-                    {report.warnings.map((w, idx) => (
+                    {(report.validation_report?.warnings || report.warnings || []).map((w, idx) => (
                       <li key={idx} className="leading-snug">{w}</li>
                     ))}
                   </ul>
