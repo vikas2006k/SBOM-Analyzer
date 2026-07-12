@@ -14,7 +14,9 @@ class DashboardController:
     def get_summary(self):
         """Retrieve overall system analytics KPI statistics."""
         try:
-            summary = self.dashboard_service.get_executive_metrics()
+            app_id = request.args.get("application_id")
+            app_id_val = int(app_id) if app_id else None
+            summary = self.dashboard_service.get_executive_metrics(app_id_val)
             return ResponseHelper.success(summary, "Dashboard summary statistics compiled successfully")
         except Exception as e:
             logger.error(f"Dashboard Summary API failed: {str(e)}")

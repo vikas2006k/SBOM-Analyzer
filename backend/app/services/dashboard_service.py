@@ -19,42 +19,73 @@ class DashboardService:
     def __init__(self):
         self.risk_service = RiskService()
 
-    def get_executive_metrics(self):
+    def get_executive_metrics(self, application_id=None):
         """Compile aggregated security supply chain metrics across the workspace."""
-        logger.info("Compiling executive dashboard KPI metrics...")
+        logger.info(f"Compiling dashboard KPI metrics (filtered by app: {application_id})...")
         
-        total_apps = Application.query.filter_by(is_deleted=False).count()
-        total_libs = Library.query.filter_by(is_deleted=False).count()
-        total_cves = Vulnerability.query.filter_by(is_deleted=False).count()
-        
-        # Calculate active vulnerabilities
-        active_cve_count = db.session.query(func.distinct(Vulnerability.id))\
-            .join(Library.vulnerabilities)\
-            .join(Dependency, Dependency.child_library_id == Library.id)\
-            .filter(Dependency.is_deleted == False)\
-            .count()
+        if application_id:
+            total_apps = 1
+            total_libs = db.session.query(Library.id)\
+                .join(Dependency, Dependency.child_library_id == Library.id)\
+                .filter(Dependency.application_id == application_id, Dependency.is_deleted == False).count()
             
-        # Risk scores averages
-        avg_risk_row = db.session.query(func.avg(RiskScore.overall_score))\
-            .filter(RiskScore.is_deleted == False).first()
-        avg_risk = float(avg_risk_row[0]) if avg_risk_row and avg_risk_row[0] is not None else 0.0
-        
-        # Severity distribution of active vulnerabilities
-        sev_counts = db.session.query(Vulnerability.severity, func.count(func.distinct(Vulnerability.id)))\
-            .join(Library.vulnerabilities)\
-            .join(Dependency, Dependency.child_library_id == Library.id)\
-            .filter(Dependency.is_deleted == False)\
-            .group_by(Vulnerability.severity).all()
+            total_cves = db.session.query(func.distinct(Vulnerability.id))\
+                .join(Library.vulnerabilities)\
+                .join(Dependency, Dependency.child_library_id == Library.id)\
+                .filter(Dependency.application_id == application_id, Dependency.is_deleted == False).count()
+                
+            active_cve_count = total_cves
+            
+            # Risk scores averages
+            risk_score = RiskScore.query.filter_by(application_id=application_id, is_deleted=False).first()
+            avg_risk = float(risk_score.overall_score) if risk_score else 0.0
+            
+            # Severity distribution
+            sev_counts = db.session.query(Vulnerability.severity, func.count(func.distinct(Vulnerability.id)))\
+                .join(Library.vulnerabilities)\
+                .join(Dependency, Dependency.child_library_id == Library.id)\
+                .filter(Dependency.application_id == application_id, Dependency.is_deleted == False)\
+                .group_by(Vulnerability.severity).all()
+                
+            # License distribution
+            lic_counts = db.session.query(Library.license_name, func.count(Library.id))\
+                .join(Dependency, Dependency.child_library_id == Library.id)\
+                .filter(Dependency.application_id == application_id, Dependency.is_deleted == False)\
+                .group_by(Library.license_name).all()
+        else:
+            total_apps = Application.query.filter_by(is_deleted=False).count()
+            total_libs = Library.query.filter_by(is_deleted=False).count()
+            total_cves = Vulnerability.query.filter_by(is_deleted=False).count()
+            
+            # Calculate active vulnerabilities
+            active_cve_count = db.session.query(func.distinct(Vulnerability.id))\
+                .join(Library.vulnerabilities)\
+                .join(Dependency, Dependency.child_library_id == Library.id)\
+                .filter(Dependency.is_deleted == False)\
+                .count()
+                
+            # Risk scores averages
+            avg_risk_row = db.session.query(func.avg(RiskScore.overall_score))\
+                .filter(RiskScore.is_deleted == False).first()
+            avg_risk = float(avg_risk_row[0]) if avg_risk_row and avg_risk_row[0] is not None else 0.0
+            
+            # Severity distribution of active vulnerabilities
+            sev_counts = db.session.query(Vulnerability.severity, func.count(func.distinct(Vulnerability.id)))\
+                .join(Library.vulnerabilities)\
+                .join(Dependency, Dependency.child_library_id == Library.id)\
+                .filter(Dependency.is_deleted == False)\
+                .group_by(Vulnerability.severity).all()
+                
+            # License distribution
+            lic_counts = db.session.query(Library.license_name, func.count(Library.id))\
+                .filter(Library.is_deleted == False)\
+                .group_by(Library.license_name).all()
             
         severity_dist = {"Critical": 0, "High": 0, "Medium": 0, "Low": 0, "Informational": 0}
         for sev, count in sev_counts:
             if sev in severity_dist:
                 severity_dist[sev] = count
                 
-        # License distribution
-        lic_counts = db.session.query(Library.license_name, func.count(Library.id))\
-            .filter(Library.is_deleted == False)\
-            .group_by(Library.license_name).all()
         license_dist = {lic_name or "Unknown": count for lic_name, count in lic_counts if count > 0}
         
         # Application list with summary status

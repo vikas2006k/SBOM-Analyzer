@@ -10,15 +10,16 @@ import { Pie, Bar } from 'react-chartjs-2';
 // Register Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title);
 
-const Dashboard = () => {
+const Dashboard = ({ activeAppId }) => {
   const navigate = useNavigate();
   const [metrics, setMetrics] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadDashboardMetrics = async () => {
+      setLoading(true);
       try {
-        const res = await dashboardAPI.getSummary();
+        const res = await dashboardAPI.getSummary(activeAppId);
         setMetrics(res.data.data);
       } catch (err) {
         console.error("Dashboard metrics load failed:", err);
@@ -27,7 +28,7 @@ const Dashboard = () => {
       }
     };
     loadDashboardMetrics();
-  }, []);
+  }, [activeAppId]);
 
   if (loading) {
     return (

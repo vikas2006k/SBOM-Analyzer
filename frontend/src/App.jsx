@@ -49,7 +49,7 @@ const App = () => {
           {/* Private Routes Group */}
           <Route path="/" element={
             <PrivateRoute activeAppId={activeAppId} setActiveAppId={setActiveAppId}>
-              <Dashboard />
+              <Dashboard activeAppId={activeAppId} />
             </PrivateRoute>
           } />
           <Route path="/upload" element={

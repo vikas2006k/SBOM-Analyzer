@@ -108,7 +108,7 @@ export const copilotAPI = {
 };
 
 export const dashboardAPI = {
-  getSummary: () => api.get('/dashboard/summary'),
+  getSummary: (appId = '') => api.get(appId ? `/dashboard/summary?application_id=${appId}` : '/dashboard/summary'),
   search: (query) => api.get(`/dashboard/search?query=${query}`),
 };
 
