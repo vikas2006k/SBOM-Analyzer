@@ -1,3 +1,4 @@
+import re
 from app.database.connection import db
 from app.models.license import License
 from app.models.license_rule import LicenseRule
@@ -101,13 +102,14 @@ class LicenseService:
                 # Default safety fallback
                 rule = rules.get("Unknown") or LicenseRule(commercial_allowed=False, proprietary_linkable=False)
                 
-            # Commercial compliance check
+            # Commercial compliance check (only for High/Critical apps with Copyleft licenses)
             is_commercial_app = app.business_criticality in ['High', 'Critical']
             
-            if is_commercial_app and not rule.commercial_allowed:
+            if is_commercial_app and not rule.commercial_allowed and resolved_category not in ('Unknown',):
                 conflict_msg = (
                     f"Compliance Conflict: License '{license_name}' (Category: {resolved_category}) on "
-                    f"library '{lib.name}@{lib.version}' violates the commercial policy of application business criticality '{app.business_criticality}'."
+                    f"library '{lib.name}@{lib.version}' violates the commercial policy of application "
+                    f"with business criticality '{app.business_criticality}'."
                 )
                 conflicts.append({
                     "library_name": lib.name,
@@ -118,34 +120,41 @@ class LicenseService:
                     "description": conflict_msg
                 })
                 recommendations.append(
-                    f"Replace Copyleft dependency '{lib.name}@{lib.version}' ({license_name}) with a permissively licensed alternative, "
-                    f"or isolate it in a separate process to avoid GPL viral compliance obligations."
+                    f"Replace '{lib.name}@{lib.version}' ({license_name}) with a permissively licensed alternative, "
+                    f"or isolate it in a separate service to avoid GPL viral compliance obligations."
                 )
                 
-            # Proprietary linking checks
-            if not rule.proprietary_linkable and resolved_category == "Copyleft":
+            # Proprietary linking check — Copyleft is ALWAYS a linking risk, regardless of app criticality
+            if resolved_category == "Copyleft" and not rule.proprietary_linkable:
                 linking_msg = (
                     f"Linking Risk: Strong Copyleft License '{license_name}' on library '{lib.name}@{lib.version}' "
-                    f"is dynamically/statically linked. This requires the parent application to be open-sourced."
+                    f"is dynamically/statically linked. This requires the parent application source code to be open-sourced under the same terms."
                 )
-                conflicts.append({
-                    "library_name": lib.name,
-                    "library_version": lib.version,
-                    "license_name": license_name,
-                    "category": resolved_category,
-                    "type": "Viral Copyleft Linking Warning",
-                    "description": linking_msg
-                })
+                # Only add if not already in conflicts to avoid duplicates
+                already_added = any(c['library_name'] == lib.name and c['library_version'] == lib.version and c['type'] == 'Viral Copyleft Linking Warning' for c in conflicts)
+                if not already_added:
+                    conflicts.append({
+                        "library_name": lib.name,
+                        "library_version": lib.version,
+                        "license_name": license_name,
+                        "category": resolved_category,
+                        "type": "Viral Copyleft Linking Warning",
+                        "description": linking_msg
+                    })
+                    recommendations.append(
+                        f"Replace or isolate '{lib.name}@{lib.version}' ({license_name}) — GPL/AGPL viral terms require your application to also be open-source."
+                    )
                 
+            # Unknown licenses → warnings only (require manual legal review)
             if resolved_category == "Unknown":
                 warnings.append({
                     "library_name": lib.name,
                     "library_version": lib.version,
                     "license_name": license_name,
-                    "description": f"Library '{lib.name}@{lib.version}' has an unidentified license. Manual legal review recommended."
+                    "description": f"Library '{lib.name}@{lib.version}' has an unidentified license ('{license_name}'). Manual legal review recommended."
                 })
                 recommendations.append(
-                    f"Audit the source code repository of '{lib.name}@{lib.version}' to locate the LICENSE file and manually classify."
+                    f"Audit the source code repository of '{lib.name}@{lib.version}' to locate the LICENSE file and manually classify the license."
                 )
                 
         # Generate summary score (100 down to 0)
@@ -188,4 +197,3 @@ class LicenseService:
             "conflicts": conflicts
         }
 
-import re
