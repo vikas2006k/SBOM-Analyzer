@@ -15,8 +15,11 @@ const Dashboard = ({ activeAppId }) => {
   const [metrics, setMetrics] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  console.log("Dashboard rendered with activeAppId:", activeAppId);
+
   useEffect(() => {
     const loadDashboardMetrics = async () => {
+      console.log("loadDashboardMetrics triggered with activeAppId:", activeAppId);
       setLoading(true);
       try {
         const res = await dashboardAPI.getSummary(activeAppId);

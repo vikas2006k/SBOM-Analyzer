@@ -16,6 +16,7 @@ api.interceptors.request.use(
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`;
     }
+    console.log("AXIOS REQUEST URL:", config.url);
     return config;
   },
   (error) => {

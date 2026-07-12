@@ -49,7 +49,7 @@ const DashboardLayout = ({ children, activeAppId, setActiveAppId }) => {
       }
     };
     loadHeaderData();
-  }, [activeAppId, setActiveAppId]);
+  }, []);
 
   const handleSearch = async (e) => {
     e.preventDefault();
