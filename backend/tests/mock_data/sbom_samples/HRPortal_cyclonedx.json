@@ -1,0 +1,1324 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-01T00:00:00Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "HRPortal-1.0.0",
+      "name": "HRPortal",
+      "version": "1.0.0",
+      "purl": "pkg:application/HRPortal@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "coverage-5.12.10",
+      "name": "coverage",
+      "version": "5.12.10",
+      "purl": "pkg:pip/coverage@5.12.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "morgan-4.11.0",
+      "name": "morgan",
+      "version": "4.11.0",
+      "purl": "pkg:pip/morgan@4.11.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "sqlalchemy-5.13.1",
+      "name": "sqlalchemy",
+      "version": "5.13.1",
+      "purl": "pkg:pip/sqlalchemy@5.13.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "paramiko-5.10.10",
+      "name": "paramiko",
+      "version": "5.10.10",
+      "purl": "pkg:pip/paramiko@5.10.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gunicorn-3.11.7",
+      "name": "gunicorn",
+      "version": "3.11.7",
+      "purl": "pkg:pip/gunicorn@3.11.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "numpy-1.9.3",
+      "name": "numpy",
+      "version": "1.9.3",
+      "purl": "pkg:pip/numpy@1.9.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytest-2.8.5",
+      "name": "pytest",
+      "version": "2.8.5",
+      "purl": "pkg:pip/pytest@2.8.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-dateutil-2.15.9",
+      "name": "python-dateutil",
+      "version": "2.15.9",
+      "purl": "pkg:pip/python-dateutil@2.15.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cors-4.13.1",
+      "name": "cors",
+      "version": "4.13.1",
+      "purl": "pkg:pip/cors@4.13.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "django-2.10.8",
+      "name": "django",
+      "version": "2.10.8",
+      "purl": "pkg:pip/django@2.10.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mypy-2.4.5",
+      "name": "mypy",
+      "version": "2.4.5",
+      "purl": "pkg:pip/mypy@2.4.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "boto3-4.6.8",
+      "name": "boto3",
+      "version": "4.6.8",
+      "purl": "pkg:pip/boto3@4.6.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpx-3.6.5",
+      "name": "httpx",
+      "version": "3.6.5",
+      "purl": "pkg:pip/httpx@3.6.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "scipy-1.3.0",
+      "name": "scipy",
+      "version": "1.3.0",
+      "purl": "pkg:pip/scipy@1.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "moment-2.6.3",
+      "name": "moment",
+      "version": "2.6.3",
+      "purl": "pkg:pip/moment@2.6.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastapi-5.1.4",
+      "name": "fastapi",
+      "version": "5.1.4",
+      "purl": "pkg:pip/fastapi@5.1.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "twisted-3.11.1",
+      "name": "twisted",
+      "version": "3.11.1",
+      "purl": "pkg:pip/twisted@3.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyjwt-5.2.2",
+      "name": "pyjwt",
+      "version": "5.2.2",
+      "purl": "pkg:pip/pyjwt@5.2.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uuid-1.8.6",
+      "name": "uuid",
+      "version": "1.8.6",
+      "purl": "pkg:pip/uuid@1.8.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "formidable-4.4.1",
+      "name": "formidable",
+      "version": "4.4.1",
+      "purl": "pkg:pip/formidable@4.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyyaml-5.10.7",
+      "name": "pyyaml",
+      "version": "5.10.7",
+      "purl": "pkg:pip/pyyaml@5.10.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "idna-2.10.2",
+      "name": "idna",
+      "version": "2.10.2",
+      "purl": "pkg:pip/idna@2.10.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bandit-1.8.9",
+      "name": "bandit",
+      "version": "1.8.9",
+      "purl": "pkg:pip/bandit@1.8.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ansible-core-3.5.6",
+      "name": "ansible-core",
+      "version": "3.5.6",
+      "purl": "pkg:pip/ansible-core@3.5.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urllib3-4.12.0",
+      "name": "urllib3",
+      "version": "4.12.0",
+      "purl": "pkg:pip/urllib3@4.12.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "aiohttp-2.12.0",
+      "name": "aiohttp",
+      "version": "2.12.0",
+      "purl": "pkg:pip/aiohttp@2.12.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pandas-5.4.7",
+      "name": "pandas",
+      "version": "5.4.7",
+      "purl": "pkg:pip/pandas@5.4.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cryptography-2.14.1",
+      "name": "cryptography",
+      "version": "2.14.1",
+      "purl": "pkg:pip/cryptography@2.14.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic-4.11.1",
+      "name": "pydantic",
+      "version": "4.11.1",
+      "purl": "pkg:pip/pydantic@4.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "caffeine-2.4.2",
+      "name": "caffeine",
+      "version": "2.4.2",
+      "purl": "pkg:pip/caffeine@2.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "markupsafe-2.0.9",
+      "name": "markupsafe",
+      "version": "2.0.9",
+      "purl": "pkg:pip/markupsafe@2.0.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "UNKNOWN"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "typescript-4.13.7",
+      "name": "typescript",
+      "version": "4.13.7",
+      "purl": "pkg:pip/typescript@4.13.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-validator-1.4.0",
+      "name": "hibernate-validator",
+      "version": "1.4.0",
+      "purl": "pkg:pip/hibernate-validator@1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "botocore-1.13.8",
+      "name": "botocore",
+      "version": "1.13.8",
+      "purl": "pkg:pip/botocore@1.13.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "safety-1.2.7",
+      "name": "safety",
+      "version": "1.2.7",
+      "purl": "pkg:pip/safety@1.2.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "flask-4.7.2",
+      "name": "flask",
+      "version": "4.7.2",
+      "purl": "pkg:pip/flask@4.7.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pillow-1.0.7",
+      "name": "pillow",
+      "version": "1.0.7",
+      "purl": "pkg:pip/pillow@1.0.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "rich-4.0.5",
+      "name": "rich",
+      "version": "4.0.5",
+      "purl": "pkg:pip/rich@4.0.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "charset-normalizer-3.4.1",
+      "name": "charset-normalizer",
+      "version": "3.4.1",
+      "purl": "pkg:pip/charset-normalizer@3.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests-3.6.0",
+      "name": "requests",
+      "version": "3.6.0",
+      "purl": "pkg:pip/requests@3.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-1.10.2",
+      "name": "bcrypt",
+      "version": "1.10.2",
+      "purl": "pkg:pip/bcrypt@1.10.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "click-1.8.4",
+      "name": "click",
+      "version": "1.8.4",
+      "purl": "pkg:pip/click@1.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-core-3.12.5",
+      "name": "hibernate-core",
+      "version": "3.12.5",
+      "purl": "pkg:pip/hibernate-core@3.12.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "celery-2.9.6",
+      "name": "celery",
+      "version": "2.9.6",
+      "purl": "pkg:pip/celery@2.9.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "psycopg2-3.6.1",
+      "name": "psycopg2",
+      "version": "3.6.1",
+      "purl": "pkg:pip/psycopg2@3.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "six-2.8.4",
+      "name": "six",
+      "version": "2.8.4",
+      "purl": "pkg:pip/six@2.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "scikit-learn-4.8.2",
+      "name": "scikit-learn",
+      "version": "4.8.2",
+      "purl": "pkg:pip/scikit-learn@4.8.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-2.12.1",
+      "name": "setuptools",
+      "version": "2.12.1",
+      "purl": "pkg:pip/setuptools@2.12.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uvicorn-4.6.8",
+      "name": "uvicorn",
+      "version": "4.6.8",
+      "purl": "pkg:pip/uvicorn@4.6.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-1.5.7",
+      "name": "matplotlib",
+      "version": "1.5.7",
+      "purl": "pkg:pip/matplotlib@1.5.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "flask-4.1.3",
+      "name": "flask",
+      "version": "4.1.3",
+      "purl": "pkg:npm/flask@4.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "charset-normalizer-1.5.4",
+      "name": "charset-normalizer",
+      "version": "1.5.4",
+      "purl": "pkg:npm/charset-normalizer@1.5.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "celery-2.8.3",
+      "name": "celery",
+      "version": "2.8.3",
+      "purl": "pkg:npm/celery@2.8.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pillow-2.3.4",
+      "name": "pillow",
+      "version": "2.3.4",
+      "purl": "pkg:npm/pillow@2.3.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uvicorn-2.9.5",
+      "name": "uvicorn",
+      "version": "2.9.5",
+      "purl": "pkg:npm/uvicorn@2.9.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-4.10.3",
+      "name": "bcrypt",
+      "version": "4.10.3",
+      "purl": "pkg:npm/bcrypt@4.10.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uvicorn-3.9.1",
+      "name": "uvicorn",
+      "version": "3.9.1",
+      "purl": "pkg:npm/uvicorn@3.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-2.6.4",
+      "name": "matplotlib",
+      "version": "2.6.4",
+      "purl": "pkg:npm/matplotlib@2.6.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "psycopg2-2.1.0",
+      "name": "psycopg2",
+      "version": "2.1.0",
+      "purl": "pkg:npm/psycopg2@2.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "charset-normalizer-1.5.3",
+      "name": "charset-normalizer",
+      "version": "1.5.3",
+      "purl": "pkg:npm/charset-normalizer@1.5.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-1.5.2",
+      "name": "setuptools",
+      "version": "1.5.2",
+      "purl": "pkg:npm/setuptools@1.5.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "click-3.8.0",
+      "name": "click",
+      "version": "3.8.0",
+      "purl": "pkg:npm/click@3.8.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "flask-3.8.4",
+      "name": "flask",
+      "version": "3.8.4",
+      "purl": "pkg:npm/flask@3.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pillow-2.6.2",
+      "name": "pillow",
+      "version": "2.6.2",
+      "purl": "pkg:npm/pillow@2.6.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-2.2.3",
+      "name": "setuptools",
+      "version": "2.2.3",
+      "purl": "pkg:npm/setuptools@2.2.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-1.1.5",
+      "name": "matplotlib",
+      "version": "1.1.5",
+      "purl": "pkg:npm/matplotlib@1.1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-2.7.0",
+      "name": "setuptools",
+      "version": "2.7.0",
+      "purl": "pkg:npm/setuptools@2.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-core-2.3.5",
+      "name": "hibernate-core",
+      "version": "2.3.5",
+      "purl": "pkg:npm/hibernate-core@2.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-1.4.3",
+      "name": "setuptools",
+      "version": "1.4.3",
+      "purl": "pkg:npm/setuptools@1.4.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "six-1.6.4",
+      "name": "six",
+      "version": "1.6.4",
+      "purl": "pkg:npm/six@1.6.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "flask-1.6.5",
+      "name": "flask",
+      "version": "1.6.5",
+      "purl": "pkg:npm/flask@1.6.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "scikit-learn-1.5.3",
+      "name": "scikit-learn",
+      "version": "1.5.3",
+      "purl": "pkg:npm/scikit-learn@1.5.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests-4.2.0",
+      "name": "requests",
+      "version": "4.2.0",
+      "purl": "pkg:npm/requests@4.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-3.10.2",
+      "name": "bcrypt",
+      "version": "3.10.2",
+      "purl": "pkg:npm/bcrypt@3.10.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-core-3.10.2",
+      "name": "hibernate-core",
+      "version": "3.10.2",
+      "purl": "pkg:npm/hibernate-core@3.10.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "psycopg2-2.6.2",
+      "name": "psycopg2",
+      "version": "2.6.2",
+      "purl": "pkg:npm/psycopg2@2.6.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests-2.6.1",
+      "name": "requests",
+      "version": "2.6.1",
+      "purl": "pkg:npm/requests@2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "scikit-learn-2.5.0",
+      "name": "scikit-learn",
+      "version": "2.5.0",
+      "purl": "pkg:npm/scikit-learn@2.5.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-3.2.1",
+      "name": "matplotlib",
+      "version": "3.2.1",
+      "purl": "pkg:npm/matplotlib@3.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-core-2.8.4",
+      "name": "hibernate-core",
+      "version": "2.8.4",
+      "purl": "pkg:npm/hibernate-core@2.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "HRPortal-1.0.0",
+      "dependsOn": [
+        "coverage-5.12.10",
+        "morgan-4.11.0",
+        "sqlalchemy-5.13.1",
+        "paramiko-5.10.10",
+        "gunicorn-3.11.7",
+        "numpy-1.9.3",
+        "pytest-2.8.5",
+        "python-dateutil-2.15.9",
+        "cors-4.13.1",
+        "django-2.10.8",
+        "mypy-2.4.5",
+        "boto3-4.6.8",
+        "httpx-3.6.5",
+        "scipy-1.3.0",
+        "moment-2.6.3",
+        "fastapi-5.1.4",
+        "twisted-3.11.1",
+        "pyjwt-5.2.2",
+        "uuid-1.8.6",
+        "formidable-4.4.1",
+        "pyyaml-5.10.7",
+        "idna-2.10.2",
+        "bandit-1.8.9",
+        "ansible-core-3.5.6",
+        "urllib3-4.12.0",
+        "aiohttp-2.12.0",
+        "pandas-5.4.7",
+        "cryptography-2.14.1",
+        "pydantic-4.11.1",
+        "caffeine-2.4.2",
+        "markupsafe-2.0.9",
+        "typescript-4.13.7",
+        "hibernate-validator-1.4.0",
+        "botocore-1.13.8",
+        "safety-1.2.7",
+        "flask-4.7.2",
+        "pillow-1.0.7",
+        "rich-4.0.5",
+        "charset-normalizer-3.4.1",
+        "requests-3.6.0",
+        "bcrypt-1.10.2",
+        "click-1.8.4",
+        "hibernate-core-3.12.5",
+        "celery-2.9.6",
+        "psycopg2-3.6.1",
+        "six-2.8.4",
+        "scikit-learn-4.8.2",
+        "setuptools-2.12.1",
+        "uvicorn-4.6.8",
+        "matplotlib-1.5.7"
+      ]
+    },
+    {
+      "ref": "coverage-5.12.10",
+      "dependsOn": [
+        "flask-4.1.3",
+        "charset-normalizer-1.5.4"
+      ]
+    },
+    {
+      "ref": "morgan-4.11.0",
+      "dependsOn": [
+        "celery-2.8.3",
+        "pillow-2.3.4",
+        "uvicorn-2.9.5"
+      ]
+    },
+    {
+      "ref": "paramiko-5.10.10",
+      "dependsOn": [
+        "bcrypt-4.10.3",
+        "uvicorn-3.9.1",
+        "matplotlib-2.6.4"
+      ]
+    },
+    {
+      "ref": "numpy-1.9.3",
+      "dependsOn": [
+        "psycopg2-2.1.0"
+      ]
+    },
+    {
+      "ref": "pytest-2.8.5",
+      "dependsOn": [
+        "charset-normalizer-1.5.3"
+      ]
+    },
+    {
+      "ref": "python-dateutil-2.15.9",
+      "dependsOn": [
+        "setuptools-1.5.2"
+      ]
+    },
+    {
+      "ref": "cors-4.13.1",
+      "dependsOn": [
+        "click-3.8.0",
+        "flask-3.8.4"
+      ]
+    },
+    {
+      "ref": "django-2.10.8",
+      "dependsOn": [
+        "pillow-2.6.2"
+      ]
+    },
+    {
+      "ref": "mypy-2.4.5",
+      "dependsOn": [
+        "setuptools-2.2.3"
+      ]
+    },
+    {
+      "ref": "boto3-4.6.8",
+      "dependsOn": [
+        "matplotlib-1.1.5"
+      ]
+    },
+    {
+      "ref": "httpx-3.6.5",
+      "dependsOn": [
+        "setuptools-2.7.0",
+        "hibernate-core-2.3.5"
+      ]
+    },
+    {
+      "ref": "scipy-1.3.0",
+      "dependsOn": [
+        "setuptools-1.4.3"
+      ]
+    },
+    {
+      "ref": "moment-2.6.3",
+      "dependsOn": [
+        "six-1.6.4"
+      ]
+    },
+    {
+      "ref": "fastapi-5.1.4",
+      "dependsOn": [
+        "flask-1.6.5"
+      ]
+    },
+    {
+      "ref": "twisted-3.11.1",
+      "dependsOn": [
+        "scikit-learn-1.5.3"
+      ]
+    },
+    {
+      "ref": "pyjwt-5.2.2",
+      "dependsOn": [
+        "requests-4.2.0",
+        "bcrypt-3.10.2",
+        "hibernate-core-3.10.2"
+      ]
+    },
+    {
+      "ref": "formidable-4.4.1",
+      "dependsOn": [
+        "psycopg2-2.6.2"
+      ]
+    },
+    {
+      "ref": "pyyaml-5.10.7",
+      "dependsOn": [
+        "requests-2.6.1",
+        "scikit-learn-2.5.0"
+      ]
+    },
+    {
+      "ref": "idna-2.10.2",
+      "dependsOn": [
+        "matplotlib-3.2.1"
+      ]
+    },
+    {
+      "ref": "bandit-1.8.9",
+      "dependsOn": [
+        "hibernate-core-2.8.4"
+      ]
+    }
+  ]
+}

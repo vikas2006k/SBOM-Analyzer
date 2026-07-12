@@ -1,0 +1,962 @@
+{
+  "application_name": "DevToolkit",
+  "application_version": "1.0.0",
+  "libraries": [
+    {
+      "name": "pillow",
+      "version": "4.7.4",
+      "ecosystem": "pip",
+      "license": "Unlicense"
+    },
+    {
+      "name": "viper",
+      "version": "5.1.10",
+      "ecosystem": "pip",
+      "license": "Unlicense"
+    },
+    {
+      "name": "boto3",
+      "version": "5.7.7",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "logback-classic",
+      "version": "2.14.10",
+      "ecosystem": "pip",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "mypy",
+      "version": "3.2.5",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "certifi",
+      "version": "3.2.1",
+      "ecosystem": "pip",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "twisted",
+      "version": "3.9.3",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "markupsafe",
+      "version": "1.7.1",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "requests",
+      "version": "1.13.7",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "4.6.9",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.2.0",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "werkzeug",
+      "version": "2.15.5",
+      "ecosystem": "pip",
+      "license": "ISC"
+    },
+    {
+      "name": "spring-core",
+      "version": "3.12.10",
+      "ecosystem": "pip",
+      "license": "ISC"
+    },
+    {
+      "name": "redis-py",
+      "version": "1.10.8",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "wheel",
+      "version": "4.5.5",
+      "ecosystem": "pip",
+      "license": "ISC"
+    },
+    {
+      "name": "safety",
+      "version": "1.7.2",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "paramiko",
+      "version": "3.15.7",
+      "ecosystem": "pip",
+      "license": "MIT"
+    },
+    {
+      "name": "helmet",
+      "version": "4.2.3",
+      "ecosystem": "pip",
+      "license": "MIT"
+    },
+    {
+      "name": "pandas",
+      "version": "1.2.7",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "pyjwt",
+      "version": "5.4.3",
+      "ecosystem": "pip",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "urllib3",
+      "version": "4.2.0",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "cryptography",
+      "version": "3.4.5",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "psycopg2",
+      "version": "3.5.6",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "bandit",
+      "version": "5.2.4",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "matplotlib",
+      "version": "5.2.0",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "rich",
+      "version": "2.5.6",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "cobra",
+      "version": "5.8.10",
+      "ecosystem": "pip",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "ansible-core",
+      "version": "4.9.9",
+      "ecosystem": "pip",
+      "license": "Unlicense"
+    },
+    {
+      "name": "pip",
+      "version": "1.0.3",
+      "ecosystem": "pip",
+      "license": "Unlicense"
+    },
+    {
+      "name": "snakeyaml",
+      "version": "2.14.7",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "six",
+      "version": "4.15.9",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "redis",
+      "version": "4.10.8",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "celery",
+      "version": "5.7.9",
+      "ecosystem": "pip",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "setuptools",
+      "version": "4.11.7",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "coverage",
+      "version": "1.13.7",
+      "ecosystem": "pip",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "1.5.6",
+      "ecosystem": "pip",
+      "license": "ISC"
+    },
+    {
+      "name": "pytest",
+      "version": "3.12.0",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "numpy",
+      "version": "1.11.0",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "botocore",
+      "version": "1.8.0",
+      "ecosystem": "pip",
+      "license": "MIT"
+    },
+    {
+      "name": "scipy",
+      "version": "2.11.4",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "httpx",
+      "version": "3.2.1",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "3.4.8",
+      "ecosystem": "pip",
+      "license": "Unlicense"
+    },
+    {
+      "name": "aiohttp",
+      "version": "2.2.8",
+      "ecosystem": "pip",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "gunicorn",
+      "version": "3.0.7",
+      "ecosystem": "pip",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "click",
+      "version": "4.12.2",
+      "ecosystem": "pip",
+      "license": "MIT"
+    },
+    {
+      "name": "pydantic",
+      "version": "3.6.6",
+      "ecosystem": "pip",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "uvicorn",
+      "version": "1.4.8",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "pyyaml",
+      "version": "4.11.5",
+      "ecosystem": "pip",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "black",
+      "version": "3.6.2",
+      "ecosystem": "pip",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "jinja2",
+      "version": "2.0.0",
+      "ecosystem": "pip",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "pydantic",
+      "version": "3.10.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "aiohttp",
+      "version": "4.5.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jinja2",
+      "version": "4.1.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.10.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jinja2",
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "pydantic",
+      "version": "3.7.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "2.4.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "scipy",
+      "version": "2.1.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.3.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "scipy",
+      "version": "4.3.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uvicorn",
+      "version": "3.1.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "click",
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jinja2",
+      "version": "3.7.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jinja2",
+      "version": "3.4.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "3.8.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "aiohttp",
+      "version": "1.3.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "numpy",
+      "version": "2.8.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "black",
+      "version": "2.9.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "click",
+      "version": "1.5.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "4.5.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "click",
+      "version": "4.1.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "numpy",
+      "version": "4.8.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "scipy",
+      "version": "2.8.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "httpx",
+      "version": "1.8.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "scipy",
+      "version": "1.10.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.5.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "click",
+      "version": "2.2.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uvicorn",
+      "version": "4.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "gunicorn",
+      "version": "1.4.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pillow",
+      "child_version": "4.7.4"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "viper",
+      "child_version": "5.1.10"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "boto3",
+      "child_version": "5.7.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "logback-classic",
+      "child_version": "2.14.10"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "mypy",
+      "child_version": "3.2.5"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "certifi",
+      "child_version": "3.2.1"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "twisted",
+      "child_version": "3.9.3"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "markupsafe",
+      "child_version": "1.7.1"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "requests",
+      "child_version": "1.13.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "scikit-learn",
+      "child_version": "4.6.9"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "python-dateutil",
+      "child_version": "4.2.0"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "werkzeug",
+      "child_version": "2.15.5"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "spring-core",
+      "child_version": "3.12.10"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "redis-py",
+      "child_version": "1.10.8"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "wheel",
+      "child_version": "4.5.5"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "safety",
+      "child_version": "1.7.2"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "paramiko",
+      "child_version": "3.15.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "helmet",
+      "child_version": "4.2.3"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pandas",
+      "child_version": "1.2.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pyjwt",
+      "child_version": "5.4.3"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "urllib3",
+      "child_version": "4.2.0"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "cryptography",
+      "child_version": "3.4.5"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "psycopg2",
+      "child_version": "3.5.6"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "bandit",
+      "child_version": "5.2.4"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "matplotlib",
+      "child_version": "5.2.0"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "rich",
+      "child_version": "2.5.6"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "cobra",
+      "child_version": "5.8.10"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "ansible-core",
+      "child_version": "4.9.9"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pip",
+      "child_version": "1.0.3"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "snakeyaml",
+      "child_version": "2.14.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "six",
+      "child_version": "4.15.9"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "redis",
+      "child_version": "4.10.8"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "celery",
+      "child_version": "5.7.9"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "setuptools",
+      "child_version": "4.11.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "coverage",
+      "child_version": "1.13.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "charset-normalizer",
+      "child_version": "1.5.6"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pytest",
+      "child_version": "3.12.0"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "numpy",
+      "child_version": "1.11.0"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "botocore",
+      "child_version": "1.8.0"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "scipy",
+      "child_version": "2.11.4"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "httpx",
+      "child_version": "3.2.1"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "3.4.8"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "aiohttp",
+      "child_version": "2.2.8"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "gunicorn",
+      "child_version": "3.0.7"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "click",
+      "child_version": "4.12.2"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pydantic",
+      "child_version": "3.6.6"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "uvicorn",
+      "child_version": "1.4.8"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "pyyaml",
+      "child_version": "4.11.5"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "black",
+      "child_version": "3.6.2"
+    },
+    {
+      "parent_name": "DevToolkit",
+      "parent_version": "1.0.0",
+      "child_name": "jinja2",
+      "child_version": "2.0.0"
+    },
+    {
+      "parent_name": "viper",
+      "parent_version": "5.1.10",
+      "child_name": "pydantic",
+      "child_version": "3.10.0"
+    },
+    {
+      "parent_name": "logback-classic",
+      "parent_version": "2.14.10",
+      "child_name": "aiohttp",
+      "child_version": "4.5.5"
+    },
+    {
+      "parent_name": "logback-classic",
+      "parent_version": "2.14.10",
+      "child_name": "jinja2",
+      "child_version": "4.1.1"
+    },
+    {
+      "parent_name": "mypy",
+      "parent_version": "3.2.5",
+      "child_name": "pydantic",
+      "child_version": "2.10.3"
+    },
+    {
+      "parent_name": "mypy",
+      "parent_version": "3.2.5",
+      "child_name": "jinja2",
+      "child_version": "2.0.3"
+    },
+    {
+      "parent_name": "certifi",
+      "parent_version": "3.2.1",
+      "child_name": "pydantic",
+      "child_version": "3.7.3"
+    },
+    {
+      "parent_name": "certifi",
+      "parent_version": "3.2.1",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "2.4.1"
+    },
+    {
+      "parent_name": "markupsafe",
+      "parent_version": "1.7.1",
+      "child_name": "scipy",
+      "child_version": "2.1.2"
+    },
+    {
+      "parent_name": "scikit-learn",
+      "parent_version": "4.6.9",
+      "child_name": "charset-normalizer",
+      "child_version": "3.3.4"
+    },
+    {
+      "parent_name": "scikit-learn",
+      "parent_version": "4.6.9",
+      "child_name": "scipy",
+      "child_version": "4.3.2"
+    },
+    {
+      "parent_name": "python-dateutil",
+      "parent_version": "4.2.0",
+      "child_name": "uvicorn",
+      "child_version": "3.1.0"
+    },
+    {
+      "parent_name": "python-dateutil",
+      "parent_version": "4.2.0",
+      "child_name": "click",
+      "child_version": "1.0.2"
+    },
+    {
+      "parent_name": "spring-core",
+      "parent_version": "3.12.10",
+      "child_name": "jinja2",
+      "child_version": "3.7.1"
+    },
+    {
+      "parent_name": "redis-py",
+      "parent_version": "1.10.8",
+      "child_name": "jinja2",
+      "child_version": "3.4.4"
+    },
+    {
+      "parent_name": "redis-py",
+      "parent_version": "1.10.8",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "3.8.2"
+    },
+    {
+      "parent_name": "wheel",
+      "parent_version": "4.5.5",
+      "child_name": "aiohttp",
+      "child_version": "1.3.1"
+    },
+    {
+      "parent_name": "paramiko",
+      "parent_version": "3.15.7",
+      "child_name": "numpy",
+      "child_version": "2.8.2"
+    },
+    {
+      "parent_name": "paramiko",
+      "parent_version": "3.15.7",
+      "child_name": "black",
+      "child_version": "2.9.0"
+    },
+    {
+      "parent_name": "helmet",
+      "parent_version": "4.2.3",
+      "child_name": "click",
+      "child_version": "1.5.1"
+    },
+    {
+      "parent_name": "pandas",
+      "parent_version": "1.2.7",
+      "child_name": "charset-normalizer",
+      "child_version": "4.5.5"
+    },
+    {
+      "parent_name": "pyjwt",
+      "parent_version": "5.4.3",
+      "child_name": "click",
+      "child_version": "4.1.3"
+    },
+    {
+      "parent_name": "cryptography",
+      "parent_version": "3.4.5",
+      "child_name": "click",
+      "child_version": "4.1.3"
+    },
+    {
+      "parent_name": "psycopg2",
+      "parent_version": "3.5.6",
+      "child_name": "numpy",
+      "child_version": "4.8.5"
+    },
+    {
+      "parent_name": "bandit",
+      "parent_version": "5.2.4",
+      "child_name": "scipy",
+      "child_version": "2.8.3"
+    },
+    {
+      "parent_name": "matplotlib",
+      "parent_version": "5.2.0",
+      "child_name": "httpx",
+      "child_version": "1.8.0"
+    },
+    {
+      "parent_name": "matplotlib",
+      "parent_version": "5.2.0",
+      "child_name": "scipy",
+      "child_version": "1.10.3"
+    },
+    {
+      "parent_name": "rich",
+      "parent_version": "2.5.6",
+      "child_name": "aiohttp",
+      "child_version": "3.5.1"
+    },
+    {
+      "parent_name": "rich",
+      "parent_version": "2.5.6",
+      "child_name": "click",
+      "child_version": "2.2.0"
+    },
+    {
+      "parent_name": "cobra",
+      "parent_version": "5.8.10",
+      "child_name": "uvicorn",
+      "child_version": "4.10.5"
+    },
+    {
+      "parent_name": "pip",
+      "parent_version": "1.0.3",
+      "child_name": "gunicorn",
+      "child_version": "1.4.3"
+    }
+  ]
+}

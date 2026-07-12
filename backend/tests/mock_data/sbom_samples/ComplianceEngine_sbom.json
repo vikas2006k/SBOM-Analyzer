@@ -1,0 +1,968 @@
+{
+  "application_name": "ComplianceEngine",
+  "application_version": "1.0.0",
+  "libraries": [
+    {
+      "name": "aws-sdk-s3",
+      "version": "4.14.7",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "mockito-core",
+      "version": "5.11.1",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "guava",
+      "version": "3.9.7",
+      "ecosystem": "maven",
+      "license": "GPL-2.0"
+    },
+    {
+      "name": "mysql-connector-java",
+      "version": "2.15.0",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "tomcat-embed-core",
+      "version": "5.4.2",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "lettuce-core",
+      "version": "4.10.8",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "jedis",
+      "version": "1.6.9",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "3.6.3",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "spring-security-core",
+      "version": "4.0.8",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "mocha",
+      "version": "2.9.6",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "commons-collections4",
+      "version": "1.10.2",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "commander",
+      "version": "5.7.7",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "boto3",
+      "version": "1.8.8",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "logback-classic",
+      "version": "3.5.3",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "hibernate-core",
+      "version": "3.6.9",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "2.8.6",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "log4j-api",
+      "version": "4.8.3",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "h2-database",
+      "version": "4.15.6",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "spring-boot-starter",
+      "version": "3.12.2",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "netty-handler",
+      "version": "3.6.1",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "commons-codec",
+      "version": "1.4.1",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "spring-web",
+      "version": "1.8.10",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "junit-jupiter",
+      "version": "3.13.6",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "grpc-core",
+      "version": "4.6.5",
+      "ecosystem": "maven",
+      "license": "LGPL-3.0"
+    },
+    {
+      "name": "commons-io",
+      "version": "4.0.9",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "graphql",
+      "version": "1.12.5",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "jackson-databind",
+      "version": "4.2.1",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "micrometer-core",
+      "version": "3.0.7",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "slf4j-api",
+      "version": "3.11.6",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "5.13.8",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "pgx",
+      "version": "5.4.0",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "kafka-clients",
+      "version": "3.9.6",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "hibernate-validator",
+      "version": "2.7.7",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "jackson-annotations",
+      "version": "3.0.1",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "logback-core",
+      "version": "1.5.4",
+      "ecosystem": "maven",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "axios",
+      "version": "3.12.5",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "setuptools",
+      "version": "1.1.2",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "httpclient",
+      "version": "3.9.6",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "resilience4j",
+      "version": "2.8.4",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "jetty-server",
+      "version": "2.8.7",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.2.8",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "numpy",
+      "version": "3.11.5",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "caffeine",
+      "version": "1.3.3",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "2.5.4",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "gson",
+      "version": "1.7.8",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "mapstruct",
+      "version": "4.5.4",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "log4j-core",
+      "version": "3.1.4",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "aws-sdk-sqs",
+      "version": "2.1.1",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "disruptor",
+      "version": "2.11.2",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "netty-all",
+      "version": "3.5.6",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "log4j-core",
+      "version": "1.3.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "netty-all",
+      "version": "3.4.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "netty-all",
+      "version": "3.6.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "aws-sdk-sqs",
+      "version": "4.6.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "gson",
+      "version": "3.8.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "1.10.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "1.10.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "gson",
+      "version": "1.7.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "setuptools",
+      "version": "4.0.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "numpy",
+      "version": "4.1.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "gson",
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jetty-server",
+      "version": "4.4.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "3.10.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "setuptools",
+      "version": "3.6.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "resilience4j",
+      "version": "1.4.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "2.0.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jetty-server",
+      "version": "4.1.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "caffeine",
+      "version": "4.2.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "resilience4j",
+      "version": "3.6.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "4.5.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "netty-all",
+      "version": "2.5.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "resilience4j",
+      "version": "1.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "1.0.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "2.1.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "4.1.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "4.9.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "resilience4j",
+      "version": "1.7.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "4.6.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "2.9.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "aws-sdk-s3",
+      "child_version": "4.14.7"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "mockito-core",
+      "child_version": "5.11.1"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "guava",
+      "child_version": "3.9.7"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "mysql-connector-java",
+      "child_version": "2.15.0"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "tomcat-embed-core",
+      "child_version": "5.4.2"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "lettuce-core",
+      "child_version": "4.10.8"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "jedis",
+      "child_version": "1.6.9"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "postgresql-jdbc",
+      "child_version": "3.6.3"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "spring-security-core",
+      "child_version": "4.0.8"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "mocha",
+      "child_version": "2.9.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "commons-collections4",
+      "child_version": "1.10.2"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "commander",
+      "child_version": "5.7.7"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "boto3",
+      "child_version": "1.8.8"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "logback-classic",
+      "child_version": "3.5.3"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "hibernate-core",
+      "child_version": "3.6.9"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "2.8.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "log4j-api",
+      "child_version": "4.8.3"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "h2-database",
+      "child_version": "4.15.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "spring-boot-starter",
+      "child_version": "3.12.2"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "netty-handler",
+      "child_version": "3.6.1"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "commons-codec",
+      "child_version": "1.4.1"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "spring-web",
+      "child_version": "1.8.10"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "junit-jupiter",
+      "child_version": "3.13.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "grpc-core",
+      "child_version": "4.6.5"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "commons-io",
+      "child_version": "4.0.9"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "graphql",
+      "child_version": "1.12.5"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "jackson-databind",
+      "child_version": "4.2.1"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "micrometer-core",
+      "child_version": "3.0.7"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "slf4j-api",
+      "child_version": "3.11.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "commons-lang3",
+      "child_version": "5.13.8"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "pgx",
+      "child_version": "5.4.0"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "kafka-clients",
+      "child_version": "3.9.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "hibernate-validator",
+      "child_version": "2.7.7"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "jackson-annotations",
+      "child_version": "3.0.1"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "logback-core",
+      "child_version": "1.5.4"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "axios",
+      "child_version": "3.12.5"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "setuptools",
+      "child_version": "1.1.2"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "httpclient",
+      "child_version": "3.9.6"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "resilience4j",
+      "child_version": "2.8.4"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "jetty-server",
+      "child_version": "2.8.7"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "opentelemetry-api",
+      "child_version": "1.2.8"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "numpy",
+      "child_version": "3.11.5"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "caffeine",
+      "child_version": "1.3.3"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "httpcore",
+      "child_version": "2.5.4"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "gson",
+      "child_version": "1.7.8"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "mapstruct",
+      "child_version": "4.5.4"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "log4j-core",
+      "child_version": "3.1.4"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "aws-sdk-sqs",
+      "child_version": "2.1.1"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "disruptor",
+      "child_version": "2.11.2"
+    },
+    {
+      "parent_name": "ComplianceEngine",
+      "parent_version": "1.0.0",
+      "child_name": "netty-all",
+      "child_version": "3.5.6"
+    },
+    {
+      "parent_name": "aws-sdk-s3",
+      "parent_version": "4.14.7",
+      "child_name": "log4j-core",
+      "child_version": "1.3.3"
+    },
+    {
+      "parent_name": "guava",
+      "parent_version": "3.9.7",
+      "child_name": "netty-all",
+      "child_version": "3.4.1"
+    },
+    {
+      "parent_name": "mysql-connector-java",
+      "parent_version": "2.15.0",
+      "child_name": "netty-all",
+      "child_version": "3.6.3"
+    },
+    {
+      "parent_name": "tomcat-embed-core",
+      "parent_version": "5.4.2",
+      "child_name": "aws-sdk-sqs",
+      "child_version": "4.6.1"
+    },
+    {
+      "parent_name": "lettuce-core",
+      "parent_version": "4.10.8",
+      "child_name": "gson",
+      "child_version": "3.8.5"
+    },
+    {
+      "parent_name": "lettuce-core",
+      "parent_version": "4.10.8",
+      "child_name": "mapstruct",
+      "child_version": "1.10.4"
+    },
+    {
+      "parent_name": "jedis",
+      "parent_version": "1.6.9",
+      "child_name": "axios",
+      "child_version": "1.10.4"
+    },
+    {
+      "parent_name": "postgresql-jdbc",
+      "parent_version": "3.6.3",
+      "child_name": "gson",
+      "child_version": "1.7.0"
+    },
+    {
+      "parent_name": "commander",
+      "parent_version": "5.7.7",
+      "child_name": "setuptools",
+      "child_version": "4.0.3"
+    },
+    {
+      "parent_name": "boto3",
+      "parent_version": "1.8.8",
+      "child_name": "numpy",
+      "child_version": "4.1.5"
+    },
+    {
+      "parent_name": "logback-classic",
+      "parent_version": "3.5.3",
+      "child_name": "gson",
+      "child_version": "2.0.0"
+    },
+    {
+      "parent_name": "logback-classic",
+      "parent_version": "3.5.3",
+      "child_name": "jetty-server",
+      "child_version": "4.4.4"
+    },
+    {
+      "parent_name": "logback-classic",
+      "parent_version": "3.5.3",
+      "child_name": "mapstruct",
+      "child_version": "3.10.3"
+    },
+    {
+      "parent_name": "log4j-api",
+      "parent_version": "4.8.3",
+      "child_name": "axios",
+      "child_version": "4.0.0"
+    },
+    {
+      "parent_name": "h2-database",
+      "parent_version": "4.15.6",
+      "child_name": "setuptools",
+      "child_version": "3.6.4"
+    },
+    {
+      "parent_name": "spring-boot-starter",
+      "parent_version": "3.12.2",
+      "child_name": "resilience4j",
+      "child_version": "1.4.5"
+    },
+    {
+      "parent_name": "netty-handler",
+      "parent_version": "3.6.1",
+      "child_name": "axios",
+      "child_version": "2.0.1"
+    },
+    {
+      "parent_name": "netty-handler",
+      "parent_version": "3.6.1",
+      "child_name": "jetty-server",
+      "child_version": "4.1.2"
+    },
+    {
+      "parent_name": "netty-handler",
+      "parent_version": "3.6.1",
+      "child_name": "caffeine",
+      "child_version": "4.2.4"
+    },
+    {
+      "parent_name": "junit-jupiter",
+      "parent_version": "3.13.6",
+      "child_name": "resilience4j",
+      "child_version": "3.6.4"
+    },
+    {
+      "parent_name": "junit-jupiter",
+      "parent_version": "3.13.6",
+      "child_name": "axios",
+      "child_version": "4.5.0"
+    },
+    {
+      "parent_name": "grpc-core",
+      "parent_version": "4.6.5",
+      "child_name": "netty-all",
+      "child_version": "2.5.2"
+    },
+    {
+      "parent_name": "grpc-core",
+      "parent_version": "4.6.5",
+      "child_name": "resilience4j",
+      "child_version": "1.10.5"
+    },
+    {
+      "parent_name": "grpc-core",
+      "parent_version": "4.6.5",
+      "child_name": "disruptor",
+      "child_version": "1.0.3"
+    },
+    {
+      "parent_name": "commons-io",
+      "parent_version": "4.0.9",
+      "child_name": "disruptor",
+      "child_version": "2.1.4"
+    },
+    {
+      "parent_name": "commons-io",
+      "parent_version": "4.0.9",
+      "child_name": "axios",
+      "child_version": "4.1.5"
+    },
+    {
+      "parent_name": "commons-io",
+      "parent_version": "4.0.9",
+      "child_name": "opentelemetry-api",
+      "child_version": "4.9.0"
+    },
+    {
+      "parent_name": "jackson-databind",
+      "parent_version": "4.2.1",
+      "child_name": "resilience4j",
+      "child_version": "1.7.3"
+    },
+    {
+      "parent_name": "jackson-databind",
+      "parent_version": "4.2.1",
+      "child_name": "disruptor",
+      "child_version": "4.6.4"
+    },
+    {
+      "parent_name": "micrometer-core",
+      "parent_version": "3.0.7",
+      "child_name": "disruptor",
+      "child_version": "2.9.1"
+    }
+  ]
+}

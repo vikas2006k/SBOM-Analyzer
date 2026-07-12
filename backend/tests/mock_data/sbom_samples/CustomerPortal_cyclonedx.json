@@ -1,0 +1,54 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-01T00:00:00Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "CustomerPortal-1.2.0",
+      "name": "CustomerPortal",
+      "version": "1.2.0",
+      "purl": "pkg:application/CustomerPortal@1.2.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "jsonwebtoken-9.0.0",
+      "name": "jsonwebtoken",
+      "version": "9.0.0",
+      "purl": "pkg:npm/jsonwebtoken@9.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ms-2.1.3",
+      "name": "ms",
+      "version": "2.1.3",
+      "purl": "pkg:npm/ms@2.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CustomerPortal-1.2.0",
+      "dependsOn": [
+        "jsonwebtoken-9.0.0",
+        "ms-2.1.3"
+      ]
+    }
+  ]
+}

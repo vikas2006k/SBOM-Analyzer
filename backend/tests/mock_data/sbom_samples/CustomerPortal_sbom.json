@@ -1,0 +1,32 @@
+{
+  "application_name": "CustomerPortal",
+  "application_version": "1.2.0",
+  "libraries": [
+    {
+      "name": "jsonwebtoken",
+      "version": "9.0.0",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "ecosystem": "npm",
+      "license": "MIT"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "CustomerPortal",
+      "parent_version": "1.2.0",
+      "child_name": "jsonwebtoken",
+      "child_version": "9.0.0"
+    },
+    {
+      "parent_name": "CustomerPortal",
+      "parent_version": "1.2.0",
+      "child_name": "ms",
+      "child_version": "2.1.3"
+    }
+  ]
+}

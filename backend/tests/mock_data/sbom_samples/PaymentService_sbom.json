@@ -1,0 +1,968 @@
+{
+  "application_name": "PaymentService",
+  "application_version": "1.0.0",
+  "libraries": [
+    {
+      "name": "caffeine",
+      "version": "4.4.5",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "aws-sdk-s3",
+      "version": "2.0.9",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "resilience4j",
+      "version": "5.1.10",
+      "ecosystem": "maven",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "snakeyaml",
+      "version": "3.15.2",
+      "ecosystem": "maven",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "vue",
+      "version": "3.3.1",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "httpcore",
+      "version": "5.15.3",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "logback-core",
+      "version": "4.9.4",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "grpc-core",
+      "version": "3.11.7",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "httpclient",
+      "version": "4.14.4",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "guava",
+      "version": "1.5.1",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "aws-sdk-sqs",
+      "version": "2.15.7",
+      "ecosystem": "maven",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "redis-py",
+      "version": "4.11.10",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "jedis",
+      "version": "2.15.7",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "spring-boot-starter",
+      "version": "4.7.1",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "spring-web",
+      "version": "4.0.1",
+      "ecosystem": "maven",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "hibernate-validator",
+      "version": "4.10.5",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "assertj-core",
+      "version": "2.0.5",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "jackson-core",
+      "version": "4.3.4",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "netty-all",
+      "version": "5.4.7",
+      "ecosystem": "maven",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "tomcat-embed-core",
+      "version": "5.10.8",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "2.13.9",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "slf4j-api",
+      "version": "2.5.8",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "micrometer-core",
+      "version": "5.9.6",
+      "ecosystem": "maven",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "mapstruct",
+      "version": "2.9.10",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "golangci-lint",
+      "version": "4.3.9",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "hibernate-core",
+      "version": "3.1.6",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "jackson-databind",
+      "version": "2.11.9",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "kafka-clients",
+      "version": "1.10.7",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "log4j-api",
+      "version": "5.11.1",
+      "ecosystem": "maven",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "psycopg2",
+      "version": "1.11.3",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "commons-collections4",
+      "version": "3.14.3",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "junit-jupiter",
+      "version": "5.9.0",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "jetty-server",
+      "version": "2.10.8",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "mysql-connector-java",
+      "version": "1.6.8",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "2.8.8",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "h2-database",
+      "version": "1.12.0",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "jackson-annotations",
+      "version": "3.9.1",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "testify",
+      "version": "2.2.6",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "morgan",
+      "version": "3.0.8",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "protobuf-java",
+      "version": "3.3.5",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "disruptor",
+      "version": "2.3.4",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "4.10.8",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "commons-codec",
+      "version": "3.5.2",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "logback-classic",
+      "version": "3.7.7",
+      "ecosystem": "maven",
+      "license": "Unlicense"
+    },
+    {
+      "name": "lombok",
+      "version": "3.12.5",
+      "ecosystem": "maven",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "log4j-core",
+      "version": "4.4.5",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "spring-core",
+      "version": "3.7.8",
+      "ecosystem": "maven",
+      "license": "MIT"
+    },
+    {
+      "name": "aiohttp",
+      "version": "2.4.1",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "netty-handler",
+      "version": "4.12.3",
+      "ecosystem": "maven",
+      "license": "ISC"
+    },
+    {
+      "name": "bandit",
+      "version": "3.6.3",
+      "ecosystem": "maven",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "lombok",
+      "version": "2.6.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "3.2.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "log4j-core",
+      "version": "2.1.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-codec",
+      "version": "1.1.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "1.2.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "1.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "log4j-core",
+      "version": "2.10.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "logback-classic",
+      "version": "1.6.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "lombok",
+      "version": "3.8.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "log4j-core",
+      "version": "2.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "spring-core",
+      "version": "3.7.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jackson-annotations",
+      "version": "4.0.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "aiohttp",
+      "version": "1.7.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-codec",
+      "version": "2.9.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "logback-classic",
+      "version": "2.1.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "3.7.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bandit",
+      "version": "2.3.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "logback-classic",
+      "version": "3.10.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "log4j-core",
+      "version": "4.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jackson-annotations",
+      "version": "1.6.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "4.4.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "netty-handler",
+      "version": "3.2.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "log4j-core",
+      "version": "3.7.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "logback-classic",
+      "version": "1.1.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "aiohttp",
+      "version": "1.6.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "morgan",
+      "version": "2.10.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "4.5.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "h2-database",
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "disruptor",
+      "version": "1.6.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "caffeine",
+      "child_version": "4.4.5"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "aws-sdk-s3",
+      "child_version": "2.0.9"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "resilience4j",
+      "child_version": "5.1.10"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "snakeyaml",
+      "child_version": "3.15.2"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "vue",
+      "child_version": "3.3.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "httpcore",
+      "child_version": "5.15.3"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "logback-core",
+      "child_version": "4.9.4"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "grpc-core",
+      "child_version": "3.11.7"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "httpclient",
+      "child_version": "4.14.4"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "guava",
+      "child_version": "1.5.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "aws-sdk-sqs",
+      "child_version": "2.15.7"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "redis-py",
+      "child_version": "4.11.10"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "jedis",
+      "child_version": "2.15.7"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "spring-boot-starter",
+      "child_version": "4.7.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "spring-web",
+      "child_version": "4.0.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "hibernate-validator",
+      "child_version": "4.10.5"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "assertj-core",
+      "child_version": "2.0.5"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "jackson-core",
+      "child_version": "4.3.4"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "netty-all",
+      "child_version": "5.4.7"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "tomcat-embed-core",
+      "child_version": "5.10.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "postgresql-jdbc",
+      "child_version": "2.13.9"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "slf4j-api",
+      "child_version": "2.5.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "micrometer-core",
+      "child_version": "5.9.6"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "mapstruct",
+      "child_version": "2.9.10"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "golangci-lint",
+      "child_version": "4.3.9"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "hibernate-core",
+      "child_version": "3.1.6"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "jackson-databind",
+      "child_version": "2.11.9"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "kafka-clients",
+      "child_version": "1.10.7"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "log4j-api",
+      "child_version": "5.11.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "psycopg2",
+      "child_version": "1.11.3"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "commons-collections4",
+      "child_version": "3.14.3"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "junit-jupiter",
+      "child_version": "5.9.0"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "jetty-server",
+      "child_version": "2.10.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "mysql-connector-java",
+      "child_version": "1.6.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "2.8.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "h2-database",
+      "child_version": "1.12.0"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "jackson-annotations",
+      "child_version": "3.9.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "testify",
+      "child_version": "2.2.6"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "morgan",
+      "child_version": "3.0.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "protobuf-java",
+      "child_version": "3.3.5"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "disruptor",
+      "child_version": "2.3.4"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "commons-lang3",
+      "child_version": "4.10.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "commons-codec",
+      "child_version": "3.5.2"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "logback-classic",
+      "child_version": "3.7.7"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "lombok",
+      "child_version": "3.12.5"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "log4j-core",
+      "child_version": "4.4.5"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "spring-core",
+      "child_version": "3.7.8"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "aiohttp",
+      "child_version": "2.4.1"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "netty-handler",
+      "child_version": "4.12.3"
+    },
+    {
+      "parent_name": "PaymentService",
+      "parent_version": "1.0.0",
+      "child_name": "bandit",
+      "child_version": "3.6.3"
+    },
+    {
+      "parent_name": "snakeyaml",
+      "parent_version": "3.15.2",
+      "child_name": "lombok",
+      "child_version": "2.6.0"
+    },
+    {
+      "parent_name": "vue",
+      "parent_version": "3.3.1",
+      "child_name": "commons-lang3",
+      "child_version": "3.2.0"
+    },
+    {
+      "parent_name": "httpcore",
+      "parent_version": "5.15.3",
+      "child_name": "log4j-core",
+      "child_version": "2.1.4"
+    },
+    {
+      "parent_name": "httpcore",
+      "parent_version": "5.15.3",
+      "child_name": "commons-codec",
+      "child_version": "1.1.2"
+    },
+    {
+      "parent_name": "logback-core",
+      "parent_version": "4.9.4",
+      "child_name": "disruptor",
+      "child_version": "1.1.0"
+    },
+    {
+      "parent_name": "logback-core",
+      "parent_version": "4.9.4",
+      "child_name": "commons-lang3",
+      "child_version": "1.2.5"
+    },
+    {
+      "parent_name": "guava",
+      "parent_version": "1.5.1",
+      "child_name": "disruptor",
+      "child_version": "1.10.5"
+    },
+    {
+      "parent_name": "aws-sdk-sqs",
+      "parent_version": "2.15.7",
+      "child_name": "log4j-core",
+      "child_version": "2.10.2"
+    },
+    {
+      "parent_name": "aws-sdk-sqs",
+      "parent_version": "2.15.7",
+      "child_name": "logback-classic",
+      "child_version": "1.6.5"
+    },
+    {
+      "parent_name": "spring-web",
+      "parent_version": "4.0.1",
+      "child_name": "lombok",
+      "child_version": "3.8.4"
+    },
+    {
+      "parent_name": "spring-web",
+      "parent_version": "4.0.1",
+      "child_name": "log4j-core",
+      "child_version": "2.10.5"
+    },
+    {
+      "parent_name": "hibernate-validator",
+      "parent_version": "4.10.5",
+      "child_name": "spring-core",
+      "child_version": "3.7.0"
+    },
+    {
+      "parent_name": "jackson-core",
+      "parent_version": "4.3.4",
+      "child_name": "jackson-annotations",
+      "child_version": "4.0.5"
+    },
+    {
+      "parent_name": "jackson-core",
+      "parent_version": "4.3.4",
+      "child_name": "aiohttp",
+      "child_version": "1.7.3"
+    },
+    {
+      "parent_name": "netty-all",
+      "parent_version": "5.4.7",
+      "child_name": "commons-codec",
+      "child_version": "2.9.1"
+    },
+    {
+      "parent_name": "netty-all",
+      "parent_version": "5.4.7",
+      "child_name": "logback-classic",
+      "child_version": "2.1.3"
+    },
+    {
+      "parent_name": "tomcat-embed-core",
+      "parent_version": "5.10.8",
+      "child_name": "disruptor",
+      "child_version": "3.7.1"
+    },
+    {
+      "parent_name": "postgresql-jdbc",
+      "parent_version": "2.13.9",
+      "child_name": "bandit",
+      "child_version": "2.3.1"
+    },
+    {
+      "parent_name": "postgresql-jdbc",
+      "parent_version": "2.13.9",
+      "child_name": "logback-classic",
+      "child_version": "3.10.2"
+    },
+    {
+      "parent_name": "slf4j-api",
+      "parent_version": "2.5.8",
+      "child_name": "log4j-core",
+      "child_version": "4.10.5"
+    },
+    {
+      "parent_name": "jackson-databind",
+      "parent_version": "2.11.9",
+      "child_name": "jackson-annotations",
+      "child_version": "1.6.0"
+    },
+    {
+      "parent_name": "jackson-databind",
+      "parent_version": "2.11.9",
+      "child_name": "testify",
+      "child_version": "4.4.4"
+    },
+    {
+      "parent_name": "jackson-databind",
+      "parent_version": "2.11.9",
+      "child_name": "netty-handler",
+      "child_version": "3.2.1"
+    },
+    {
+      "parent_name": "kafka-clients",
+      "parent_version": "1.10.7",
+      "child_name": "log4j-core",
+      "child_version": "3.7.4"
+    },
+    {
+      "parent_name": "psycopg2",
+      "parent_version": "1.11.3",
+      "child_name": "logback-classic",
+      "child_version": "1.1.5"
+    },
+    {
+      "parent_name": "commons-collections4",
+      "parent_version": "3.14.3",
+      "child_name": "aiohttp",
+      "child_version": "1.6.2"
+    },
+    {
+      "parent_name": "jetty-server",
+      "parent_version": "2.10.8",
+      "child_name": "morgan",
+      "child_version": "2.10.3"
+    },
+    {
+      "parent_name": "mysql-connector-java",
+      "parent_version": "1.6.8",
+      "child_name": "testify",
+      "child_version": "4.5.0"
+    },
+    {
+      "parent_name": "mysql-connector-java",
+      "parent_version": "1.6.8",
+      "child_name": "h2-database",
+      "child_version": "1.1.0"
+    },
+    {
+      "parent_name": "bouncycastle-bcprov",
+      "parent_version": "2.8.8",
+      "child_name": "disruptor",
+      "child_version": "1.6.5"
+    }
+  ]
+}

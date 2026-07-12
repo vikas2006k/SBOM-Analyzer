@@ -1,0 +1,962 @@
+{
+  "application_name": "AnalyticsDashboard",
+  "application_version": "1.0.0",
+  "libraries": [
+    {
+      "name": "moment",
+      "version": "1.14.1",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "formidable",
+      "version": "5.8.5",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "cheerio",
+      "version": "3.15.7",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "bcrypt",
+      "version": "1.9.8",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "mocha",
+      "version": "4.10.8",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.12.1",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "winston",
+      "version": "1.4.10",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "sequelize",
+      "version": "3.2.9",
+      "ecosystem": "npm",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "commander",
+      "version": "2.13.9",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "dotenv",
+      "version": "4.4.4",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "setuptools",
+      "version": "5.13.9",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "babel-core",
+      "version": "5.15.3",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "node-fetch",
+      "version": "2.8.7",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "morgan",
+      "version": "5.10.6",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "multer",
+      "version": "5.0.4",
+      "ecosystem": "npm",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "mongoose",
+      "version": "1.3.9",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "nodemon",
+      "version": "2.15.2",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "eslint",
+      "version": "1.8.1",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "next",
+      "version": "4.15.4",
+      "ecosystem": "npm",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "cors",
+      "version": "5.12.7",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "knex",
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "license": "GPL-2.0"
+    },
+    {
+      "name": "chalk",
+      "version": "1.0.9",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "vue",
+      "version": "1.5.4",
+      "ecosystem": "npm",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "react",
+      "version": "4.12.5",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "typescript",
+      "version": "4.8.1",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "puppeteer",
+      "version": "1.12.4",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "inquirer",
+      "version": "1.12.7",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "passport",
+      "version": "1.11.8",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "apollo-server",
+      "version": "5.1.6",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "react-dom",
+      "version": "5.7.7",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "angular-core",
+      "version": "5.4.9",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "jest",
+      "version": "5.2.1",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "hibernate-validator",
+      "version": "5.4.5",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "spring-boot-starter",
+      "version": "2.11.8",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "yargs",
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "4.6.3",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "micrometer-core",
+      "version": "1.10.4",
+      "ecosystem": "npm",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "helmet",
+      "version": "1.9.5",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "protobuf-java",
+      "version": "2.4.0",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "prettier",
+      "version": "4.2.2",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "axios",
+      "version": "4.0.1",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "graphql",
+      "version": "1.3.7",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "bull",
+      "version": "3.3.1",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "sharp",
+      "version": "1.6.2",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "express",
+      "version": "3.4.3",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "echo",
+      "version": "4.6.2",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "testify",
+      "version": "2.9.8",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "webpack",
+      "version": "4.4.0",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "dayjs",
+      "version": "2.9.0",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "mysql-connector-java",
+      "version": "1.6.8",
+      "ecosystem": "maven",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "1.7.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "1.5.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "2.9.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "micrometer-core",
+      "version": "4.5.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "express",
+      "version": "1.7.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "1.3.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "3.9.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "1.0.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "axios",
+      "version": "3.1.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bull",
+      "version": "2.3.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bull",
+      "version": "4.2.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "echo",
+      "version": "2.10.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "3.1.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "micrometer-core",
+      "version": "3.9.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "echo",
+      "version": "3.8.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "dayjs",
+      "version": "4.7.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "3.0.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "webpack",
+      "version": "4.9.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "helmet",
+      "version": "4.6.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "dayjs",
+      "version": "4.10.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bull",
+      "version": "2.9.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "echo",
+      "version": "3.6.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "3.5.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "micrometer-core",
+      "version": "3.1.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "2.5.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "3.4.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "testify",
+      "version": "1.1.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "echo",
+      "version": "1.4.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "protobuf-java",
+      "version": "2.10.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "moment",
+      "child_version": "1.14.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "formidable",
+      "child_version": "5.8.5"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "cheerio",
+      "child_version": "3.15.7"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "bcrypt",
+      "child_version": "1.9.8"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "mocha",
+      "child_version": "4.10.8"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "nanoid",
+      "child_version": "3.12.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "winston",
+      "child_version": "1.4.10"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "sequelize",
+      "child_version": "3.2.9"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "commander",
+      "child_version": "2.13.9"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "dotenv",
+      "child_version": "4.4.4"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "setuptools",
+      "child_version": "5.13.9"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "babel-core",
+      "child_version": "5.15.3"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "node-fetch",
+      "child_version": "2.8.7"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "morgan",
+      "child_version": "5.10.6"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "multer",
+      "child_version": "5.0.4"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "mongoose",
+      "child_version": "1.3.9"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "nodemon",
+      "child_version": "2.15.2"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "eslint",
+      "child_version": "1.8.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "next",
+      "child_version": "4.15.4"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "cors",
+      "child_version": "5.12.7"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "knex",
+      "child_version": "1.0.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "chalk",
+      "child_version": "1.0.9"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "vue",
+      "child_version": "1.5.4"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "react",
+      "child_version": "4.12.5"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "typescript",
+      "child_version": "4.8.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "puppeteer",
+      "child_version": "1.12.4"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "inquirer",
+      "child_version": "1.12.7"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "passport",
+      "child_version": "1.11.8"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "apollo-server",
+      "child_version": "5.1.6"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "react-dom",
+      "child_version": "5.7.7"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "angular-core",
+      "child_version": "5.4.9"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "jest",
+      "child_version": "5.2.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "hibernate-validator",
+      "child_version": "5.4.5"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "spring-boot-starter",
+      "child_version": "2.11.8"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "yargs",
+      "child_version": "1.0.0"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "postgresql-jdbc",
+      "child_version": "4.6.3"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "micrometer-core",
+      "child_version": "1.10.4"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "helmet",
+      "child_version": "1.9.5"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "protobuf-java",
+      "child_version": "2.4.0"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "prettier",
+      "child_version": "4.2.2"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "axios",
+      "child_version": "4.0.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "graphql",
+      "child_version": "1.3.7"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "bull",
+      "child_version": "3.3.1"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "sharp",
+      "child_version": "1.6.2"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "express",
+      "child_version": "3.4.3"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "echo",
+      "child_version": "4.6.2"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "testify",
+      "child_version": "2.9.8"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "webpack",
+      "child_version": "4.4.0"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "dayjs",
+      "child_version": "2.9.0"
+    },
+    {
+      "parent_name": "AnalyticsDashboard",
+      "parent_version": "1.0.0",
+      "child_name": "mysql-connector-java",
+      "child_version": "1.6.8"
+    },
+    {
+      "parent_name": "formidable",
+      "parent_version": "5.8.5",
+      "child_name": "postgresql-jdbc",
+      "child_version": "1.7.0"
+    },
+    {
+      "parent_name": "cheerio",
+      "parent_version": "3.15.7",
+      "child_name": "testify",
+      "child_version": "1.5.4"
+    },
+    {
+      "parent_name": "bcrypt",
+      "parent_version": "1.9.8",
+      "child_name": "axios",
+      "child_version": "2.9.3"
+    },
+    {
+      "parent_name": "mocha",
+      "parent_version": "4.10.8",
+      "child_name": "micrometer-core",
+      "child_version": "4.5.4"
+    },
+    {
+      "parent_name": "mocha",
+      "parent_version": "4.10.8",
+      "child_name": "express",
+      "child_version": "1.7.1"
+    },
+    {
+      "parent_name": "nanoid",
+      "parent_version": "3.12.1",
+      "child_name": "postgresql-jdbc",
+      "child_version": "1.3.1"
+    },
+    {
+      "parent_name": "winston",
+      "parent_version": "1.4.10",
+      "child_name": "axios",
+      "child_version": "3.9.5"
+    },
+    {
+      "parent_name": "sequelize",
+      "parent_version": "3.2.9",
+      "child_name": "postgresql-jdbc",
+      "child_version": "1.0.5"
+    },
+    {
+      "parent_name": "sequelize",
+      "parent_version": "3.2.9",
+      "child_name": "axios",
+      "child_version": "3.1.2"
+    },
+    {
+      "parent_name": "commander",
+      "parent_version": "2.13.9",
+      "child_name": "bull",
+      "child_version": "2.3.4"
+    },
+    {
+      "parent_name": "dotenv",
+      "parent_version": "4.4.4",
+      "child_name": "bull",
+      "child_version": "4.2.0"
+    },
+    {
+      "parent_name": "dotenv",
+      "parent_version": "4.4.4",
+      "child_name": "echo",
+      "child_version": "2.10.3"
+    },
+    {
+      "parent_name": "babel-core",
+      "parent_version": "5.15.3",
+      "child_name": "testify",
+      "child_version": "3.1.4"
+    },
+    {
+      "parent_name": "node-fetch",
+      "parent_version": "2.8.7",
+      "child_name": "micrometer-core",
+      "child_version": "3.9.0"
+    },
+    {
+      "parent_name": "node-fetch",
+      "parent_version": "2.8.7",
+      "child_name": "echo",
+      "child_version": "3.8.0"
+    },
+    {
+      "parent_name": "node-fetch",
+      "parent_version": "2.8.7",
+      "child_name": "dayjs",
+      "child_version": "4.7.4"
+    },
+    {
+      "parent_name": "morgan",
+      "parent_version": "5.10.6",
+      "child_name": "testify",
+      "child_version": "3.0.5"
+    },
+    {
+      "parent_name": "morgan",
+      "parent_version": "5.10.6",
+      "child_name": "webpack",
+      "child_version": "4.9.1"
+    },
+    {
+      "parent_name": "nodemon",
+      "parent_version": "2.15.2",
+      "child_name": "helmet",
+      "child_version": "4.6.1"
+    },
+    {
+      "parent_name": "nodemon",
+      "parent_version": "2.15.2",
+      "child_name": "dayjs",
+      "child_version": "4.10.1"
+    },
+    {
+      "parent_name": "nodemon",
+      "parent_version": "2.15.2",
+      "child_name": "bull",
+      "child_version": "2.9.5"
+    },
+    {
+      "parent_name": "next",
+      "parent_version": "4.15.4",
+      "child_name": "echo",
+      "child_version": "3.6.4"
+    },
+    {
+      "parent_name": "next",
+      "parent_version": "4.15.4",
+      "child_name": "postgresql-jdbc",
+      "child_version": "3.5.2"
+    },
+    {
+      "parent_name": "next",
+      "parent_version": "4.15.4",
+      "child_name": "micrometer-core",
+      "child_version": "3.1.2"
+    },
+    {
+      "parent_name": "cors",
+      "parent_version": "5.12.7",
+      "child_name": "testify",
+      "child_version": "2.5.4"
+    },
+    {
+      "parent_name": "knex",
+      "parent_version": "1.0.1",
+      "child_name": "testify",
+      "child_version": "3.4.1"
+    },
+    {
+      "parent_name": "chalk",
+      "parent_version": "1.0.9",
+      "child_name": "testify",
+      "child_version": "1.1.4"
+    },
+    {
+      "parent_name": "vue",
+      "parent_version": "1.5.4",
+      "child_name": "testify",
+      "child_version": "3.4.1"
+    },
+    {
+      "parent_name": "vue",
+      "parent_version": "1.5.4",
+      "child_name": "echo",
+      "child_version": "1.4.0"
+    },
+    {
+      "parent_name": "react",
+      "parent_version": "4.12.5",
+      "child_name": "protobuf-java",
+      "child_version": "2.10.3"
+    }
+  ]
+}

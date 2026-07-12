@@ -1,0 +1,962 @@
+{
+  "application_name": "MobileBackend",
+  "application_version": "1.0.0",
+  "libraries": [
+    {
+      "name": "zap",
+      "version": "4.6.3",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "protobuf-go",
+      "version": "4.9.7",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "sarama",
+      "version": "4.2.1",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.0.4",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "moment",
+      "version": "3.15.9",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "testify",
+      "version": "2.11.4",
+      "ecosystem": "go",
+      "license": "Unlicense"
+    },
+    {
+      "name": "crypto-go",
+      "version": "5.1.10",
+      "ecosystem": "go",
+      "license": "ISC"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.14.5",
+      "ecosystem": "go",
+      "license": "ISC"
+    },
+    {
+      "name": "mux",
+      "version": "4.10.1",
+      "ecosystem": "go",
+      "license": "ISC"
+    },
+    {
+      "name": "logrus",
+      "version": "5.6.9",
+      "ecosystem": "go",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "gorm",
+      "version": "5.1.10",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "go-jwt",
+      "version": "5.2.3",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "aws-sdk-go",
+      "version": "1.12.1",
+      "ecosystem": "go",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "viper",
+      "version": "2.6.2",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "resty",
+      "version": "1.4.4",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "gson",
+      "version": "4.2.9",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "spring-core",
+      "version": "2.1.4",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "yaml-go",
+      "version": "1.5.8",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "fiber",
+      "version": "1.4.8",
+      "ecosystem": "go",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "gin",
+      "version": "5.3.6",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "json-iterator",
+      "version": "3.5.4",
+      "ecosystem": "go",
+      "license": "GPL-2.0"
+    },
+    {
+      "name": "numpy",
+      "version": "4.3.1",
+      "ecosystem": "go",
+      "license": "GPL-3.0"
+    },
+    {
+      "name": "golangci-lint",
+      "version": "5.1.7",
+      "ecosystem": "go",
+      "license": "LGPL-3.0"
+    },
+    {
+      "name": "pgx",
+      "version": "1.2.2",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "aiohttp",
+      "version": "2.9.2",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "go-redis",
+      "version": "4.6.8",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "bcrypt-go",
+      "version": "3.1.1",
+      "ecosystem": "go",
+      "license": "ISC"
+    },
+    {
+      "name": "fasthttp",
+      "version": "2.2.7",
+      "ecosystem": "go",
+      "license": "LGPL-3.0"
+    },
+    {
+      "name": "chi",
+      "version": "2.2.5",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "uuid-go",
+      "version": "5.12.7",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "nats",
+      "version": "1.3.0",
+      "ecosystem": "go",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "yargs",
+      "version": "1.2.10",
+      "ecosystem": "go",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "tomcat-embed-core",
+      "version": "1.1.6",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "colly",
+      "version": "2.9.2",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "sqlx",
+      "version": "2.1.6",
+      "ecosystem": "go",
+      "license": "Unlicense"
+    },
+    {
+      "name": "react-dom",
+      "version": "3.6.1",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "paramiko",
+      "version": "3.9.1",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "cors",
+      "version": "1.7.6",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "nats",
+      "version": "1.5.6",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "2.5.7",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "jedis",
+      "version": "2.7.1",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "go-jwt",
+      "version": "4.12.3",
+      "ecosystem": "go",
+      "license": "Unlicense"
+    },
+    {
+      "name": "inquirer",
+      "version": "3.1.8",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "logback-classic",
+      "version": "4.10.8",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "uvicorn",
+      "version": "2.0.8",
+      "ecosystem": "go",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "3.10.8",
+      "ecosystem": "go",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "coverage",
+      "version": "3.7.2",
+      "ecosystem": "go",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "pyjwt",
+      "version": "4.5.1",
+      "ecosystem": "go",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "uuid",
+      "version": "4.3.1",
+      "ecosystem": "go",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "mapstruct",
+      "version": "4.7.8",
+      "ecosystem": "go",
+      "license": "MIT"
+    },
+    {
+      "name": "inquirer",
+      "version": "4.8.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "react-dom",
+      "version": "2.1.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "2.8.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "3.3.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "cors",
+      "version": "3.4.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uuid",
+      "version": "2.2.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "coverage",
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "2.7.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "1.6.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "2.9.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uuid",
+      "version": "2.7.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bouncycastle-bcprov",
+      "version": "1.8.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "4.2.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "go-jwt",
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "logback-classic",
+      "version": "4.3.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "inquirer",
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uuid",
+      "version": "1.4.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "paramiko",
+      "version": "1.2.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jedis",
+      "version": "4.2.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "paramiko",
+      "version": "2.10.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uuid",
+      "version": "2.8.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "cors",
+      "version": "4.9.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "commons-lang3",
+      "version": "2.3.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "2.9.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uvicorn",
+      "version": "2.10.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "uvicorn",
+      "version": "1.1.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "nats",
+      "version": "1.8.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "inquirer",
+      "version": "2.7.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "jedis",
+      "version": "1.2.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "zap",
+      "child_version": "4.6.3"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "protobuf-go",
+      "child_version": "4.9.7"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "sarama",
+      "child_version": "4.2.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "pyjwt",
+      "child_version": "2.0.4"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "moment",
+      "child_version": "3.15.9"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "testify",
+      "child_version": "2.11.4"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "crypto-go",
+      "child_version": "5.1.10"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "python-dateutil",
+      "child_version": "2.14.5"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "mux",
+      "child_version": "4.10.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "logrus",
+      "child_version": "5.6.9"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "gorm",
+      "child_version": "5.1.10"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "go-jwt",
+      "child_version": "5.2.3"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "aws-sdk-go",
+      "child_version": "1.12.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "viper",
+      "child_version": "2.6.2"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "resty",
+      "child_version": "1.4.4"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "gson",
+      "child_version": "4.2.9"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "spring-core",
+      "child_version": "2.1.4"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "yaml-go",
+      "child_version": "1.5.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "fiber",
+      "child_version": "1.4.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "gin",
+      "child_version": "5.3.6"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "json-iterator",
+      "child_version": "3.5.4"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "numpy",
+      "child_version": "4.3.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "golangci-lint",
+      "child_version": "5.1.7"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "pgx",
+      "child_version": "1.2.2"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "aiohttp",
+      "child_version": "2.9.2"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "go-redis",
+      "child_version": "4.6.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "bcrypt-go",
+      "child_version": "3.1.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "fasthttp",
+      "child_version": "2.2.7"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "chi",
+      "child_version": "2.2.5"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "uuid-go",
+      "child_version": "5.12.7"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "nats",
+      "child_version": "1.3.0"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "yargs",
+      "child_version": "1.2.10"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "tomcat-embed-core",
+      "child_version": "1.1.6"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "colly",
+      "child_version": "2.9.2"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "sqlx",
+      "child_version": "2.1.6"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "react-dom",
+      "child_version": "3.6.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "paramiko",
+      "child_version": "3.9.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "cors",
+      "child_version": "1.7.6"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "nats",
+      "child_version": "1.5.6"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "commons-lang3",
+      "child_version": "2.5.7"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "jedis",
+      "child_version": "2.7.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "go-jwt",
+      "child_version": "4.12.3"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "inquirer",
+      "child_version": "3.1.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "logback-classic",
+      "child_version": "4.10.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "uvicorn",
+      "child_version": "2.0.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "3.10.8"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "coverage",
+      "child_version": "3.7.2"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "pyjwt",
+      "child_version": "4.5.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "uuid",
+      "child_version": "4.3.1"
+    },
+    {
+      "parent_name": "MobileBackend",
+      "parent_version": "1.0.0",
+      "child_name": "mapstruct",
+      "child_version": "4.7.8"
+    },
+    {
+      "parent_name": "zap",
+      "parent_version": "4.6.3",
+      "child_name": "inquirer",
+      "child_version": "4.8.4"
+    },
+    {
+      "parent_name": "pyjwt",
+      "parent_version": "2.0.4",
+      "child_name": "react-dom",
+      "child_version": "2.1.0"
+    },
+    {
+      "parent_name": "pyjwt",
+      "parent_version": "2.0.4",
+      "child_name": "commons-lang3",
+      "child_version": "2.8.5"
+    },
+    {
+      "parent_name": "moment",
+      "parent_version": "3.15.9",
+      "child_name": "commons-lang3",
+      "child_version": "3.3.3"
+    },
+    {
+      "parent_name": "moment",
+      "parent_version": "3.15.9",
+      "child_name": "cors",
+      "child_version": "3.4.0"
+    },
+    {
+      "parent_name": "testify",
+      "parent_version": "2.11.4",
+      "child_name": "uuid",
+      "child_version": "2.2.1"
+    },
+    {
+      "parent_name": "testify",
+      "parent_version": "2.11.4",
+      "child_name": "coverage",
+      "child_version": "1.0.2"
+    },
+    {
+      "parent_name": "testify",
+      "parent_version": "2.11.4",
+      "child_name": "mapstruct",
+      "child_version": "2.7.2"
+    },
+    {
+      "parent_name": "crypto-go",
+      "parent_version": "5.1.10",
+      "child_name": "mapstruct",
+      "child_version": "1.6.3"
+    },
+    {
+      "parent_name": "python-dateutil",
+      "parent_version": "2.14.5",
+      "child_name": "commons-lang3",
+      "child_version": "2.9.5"
+    },
+    {
+      "parent_name": "mux",
+      "parent_version": "4.10.1",
+      "child_name": "uuid",
+      "child_version": "2.7.2"
+    },
+    {
+      "parent_name": "logrus",
+      "parent_version": "5.6.9",
+      "child_name": "bouncycastle-bcprov",
+      "child_version": "1.8.3"
+    },
+    {
+      "parent_name": "logrus",
+      "parent_version": "5.6.9",
+      "child_name": "mapstruct",
+      "child_version": "2.7.2"
+    },
+    {
+      "parent_name": "go-jwt",
+      "parent_version": "5.2.3",
+      "child_name": "mapstruct",
+      "child_version": "4.2.4"
+    },
+    {
+      "parent_name": "go-jwt",
+      "parent_version": "5.2.3",
+      "child_name": "go-jwt",
+      "child_version": "1.2.1"
+    },
+    {
+      "parent_name": "viper",
+      "parent_version": "2.6.2",
+      "child_name": "logback-classic",
+      "child_version": "4.3.0"
+    },
+    {
+      "parent_name": "resty",
+      "parent_version": "1.4.4",
+      "child_name": "inquirer",
+      "child_version": "2.0.0"
+    },
+    {
+      "parent_name": "gson",
+      "parent_version": "4.2.9",
+      "child_name": "uuid",
+      "child_version": "1.4.1"
+    },
+    {
+      "parent_name": "gson",
+      "parent_version": "4.2.9",
+      "child_name": "paramiko",
+      "child_version": "1.2.2"
+    },
+    {
+      "parent_name": "gson",
+      "parent_version": "4.2.9",
+      "child_name": "jedis",
+      "child_version": "4.2.2"
+    },
+    {
+      "parent_name": "spring-core",
+      "parent_version": "2.1.4",
+      "child_name": "paramiko",
+      "child_version": "2.10.1"
+    },
+    {
+      "parent_name": "fiber",
+      "parent_version": "1.4.8",
+      "child_name": "uuid",
+      "child_version": "2.8.4"
+    },
+    {
+      "parent_name": "gin",
+      "parent_version": "5.3.6",
+      "child_name": "cors",
+      "child_version": "4.9.4"
+    },
+    {
+      "parent_name": "json-iterator",
+      "parent_version": "3.5.4",
+      "child_name": "commons-lang3",
+      "child_version": "2.3.1"
+    },
+    {
+      "parent_name": "golangci-lint",
+      "parent_version": "5.1.7",
+      "child_name": "mapstruct",
+      "child_version": "2.9.1"
+    },
+    {
+      "parent_name": "golangci-lint",
+      "parent_version": "5.1.7",
+      "child_name": "uvicorn",
+      "child_version": "2.10.2"
+    },
+    {
+      "parent_name": "pgx",
+      "parent_version": "1.2.2",
+      "child_name": "uvicorn",
+      "child_version": "1.1.4"
+    },
+    {
+      "parent_name": "pgx",
+      "parent_version": "1.2.2",
+      "child_name": "nats",
+      "child_version": "1.8.1"
+    },
+    {
+      "parent_name": "aiohttp",
+      "parent_version": "2.9.2",
+      "child_name": "inquirer",
+      "child_version": "2.7.5"
+    },
+    {
+      "parent_name": "aiohttp",
+      "parent_version": "2.9.2",
+      "child_name": "jedis",
+      "child_version": "1.2.2"
+    }
+  ]
+}

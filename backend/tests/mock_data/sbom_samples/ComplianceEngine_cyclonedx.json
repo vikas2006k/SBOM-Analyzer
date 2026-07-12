@@ -1,0 +1,1319 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-01T00:00:00Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "ComplianceEngine-1.0.0",
+      "name": "ComplianceEngine",
+      "version": "1.0.0",
+      "purl": "pkg:application/ComplianceEngine@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "aws-sdk-s3-4.14.7",
+      "name": "aws-sdk-s3",
+      "version": "4.14.7",
+      "purl": "pkg:maven/aws-sdk-s3@4.14.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mockito-core-5.11.1",
+      "name": "mockito-core",
+      "version": "5.11.1",
+      "purl": "pkg:maven/mockito-core@5.11.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "guava-3.9.7",
+      "name": "guava",
+      "version": "3.9.7",
+      "purl": "pkg:maven/guava@3.9.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mysql-connector-java-2.15.0",
+      "name": "mysql-connector-java",
+      "version": "2.15.0",
+      "purl": "pkg:maven/mysql-connector-java@2.15.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "tomcat-embed-core-5.4.2",
+      "name": "tomcat-embed-core",
+      "version": "5.4.2",
+      "purl": "pkg:maven/tomcat-embed-core@5.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "lettuce-core-4.10.8",
+      "name": "lettuce-core",
+      "version": "4.10.8",
+      "purl": "pkg:maven/lettuce-core@4.10.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jedis-1.6.9",
+      "name": "jedis",
+      "version": "1.6.9",
+      "purl": "pkg:maven/jedis@1.6.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "postgresql-jdbc-3.6.3",
+      "name": "postgresql-jdbc",
+      "version": "3.6.3",
+      "purl": "pkg:maven/postgresql-jdbc@3.6.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "spring-security-core-4.0.8",
+      "name": "spring-security-core",
+      "version": "4.0.8",
+      "purl": "pkg:maven/spring-security-core@4.0.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mocha-2.9.6",
+      "name": "mocha",
+      "version": "2.9.6",
+      "purl": "pkg:maven/mocha@2.9.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "commons-collections4-1.10.2",
+      "name": "commons-collections4",
+      "version": "1.10.2",
+      "purl": "pkg:maven/commons-collections4@1.10.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "commander-5.7.7",
+      "name": "commander",
+      "version": "5.7.7",
+      "purl": "pkg:maven/commander@5.7.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "boto3-1.8.8",
+      "name": "boto3",
+      "version": "1.8.8",
+      "purl": "pkg:maven/boto3@1.8.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "logback-classic-3.5.3",
+      "name": "logback-classic",
+      "version": "3.5.3",
+      "purl": "pkg:maven/logback-classic@3.5.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-core-3.6.9",
+      "name": "hibernate-core",
+      "version": "3.6.9",
+      "purl": "pkg:maven/hibernate-core@3.6.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bouncycastle-bcprov-2.8.6",
+      "name": "bouncycastle-bcprov",
+      "version": "2.8.6",
+      "purl": "pkg:maven/bouncycastle-bcprov@2.8.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "log4j-api-4.8.3",
+      "name": "log4j-api",
+      "version": "4.8.3",
+      "purl": "pkg:maven/log4j-api@4.8.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "h2-database-4.15.6",
+      "name": "h2-database",
+      "version": "4.15.6",
+      "purl": "pkg:maven/h2-database@4.15.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "spring-boot-starter-3.12.2",
+      "name": "spring-boot-starter",
+      "version": "3.12.2",
+      "purl": "pkg:maven/spring-boot-starter@3.12.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "netty-handler-3.6.1",
+      "name": "netty-handler",
+      "version": "3.6.1",
+      "purl": "pkg:maven/netty-handler@3.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "commons-codec-1.4.1",
+      "name": "commons-codec",
+      "version": "1.4.1",
+      "purl": "pkg:maven/commons-codec@1.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "spring-web-1.8.10",
+      "name": "spring-web",
+      "version": "1.8.10",
+      "purl": "pkg:maven/spring-web@1.8.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "junit-jupiter-3.13.6",
+      "name": "junit-jupiter",
+      "version": "3.13.6",
+      "purl": "pkg:maven/junit-jupiter@3.13.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "grpc-core-4.6.5",
+      "name": "grpc-core",
+      "version": "4.6.5",
+      "purl": "pkg:maven/grpc-core@4.6.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "commons-io-4.0.9",
+      "name": "commons-io",
+      "version": "4.0.9",
+      "purl": "pkg:maven/commons-io@4.0.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "graphql-1.12.5",
+      "name": "graphql",
+      "version": "1.12.5",
+      "purl": "pkg:maven/graphql@1.12.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jackson-databind-4.2.1",
+      "name": "jackson-databind",
+      "version": "4.2.1",
+      "purl": "pkg:maven/jackson-databind@4.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "micrometer-core-3.0.7",
+      "name": "micrometer-core",
+      "version": "3.0.7",
+      "purl": "pkg:maven/micrometer-core@3.0.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "slf4j-api-3.11.6",
+      "name": "slf4j-api",
+      "version": "3.11.6",
+      "purl": "pkg:maven/slf4j-api@3.11.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "commons-lang3-5.13.8",
+      "name": "commons-lang3",
+      "version": "5.13.8",
+      "purl": "pkg:maven/commons-lang3@5.13.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pgx-5.4.0",
+      "name": "pgx",
+      "version": "5.4.0",
+      "purl": "pkg:maven/pgx@5.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "kafka-clients-3.9.6",
+      "name": "kafka-clients",
+      "version": "3.9.6",
+      "purl": "pkg:maven/kafka-clients@3.9.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "hibernate-validator-2.7.7",
+      "name": "hibernate-validator",
+      "version": "2.7.7",
+      "purl": "pkg:maven/hibernate-validator@2.7.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jackson-annotations-3.0.1",
+      "name": "jackson-annotations",
+      "version": "3.0.1",
+      "purl": "pkg:maven/jackson-annotations@3.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "logback-core-1.5.4",
+      "name": "logback-core",
+      "version": "1.5.4",
+      "purl": "pkg:maven/logback-core@1.5.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "UNKNOWN"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-3.12.5",
+      "name": "axios",
+      "version": "3.12.5",
+      "purl": "pkg:maven/axios@3.12.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-1.1.2",
+      "name": "setuptools",
+      "version": "1.1.2",
+      "purl": "pkg:maven/setuptools@1.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpclient-3.9.6",
+      "name": "httpclient",
+      "version": "3.9.6",
+      "purl": "pkg:maven/httpclient@3.9.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "resilience4j-2.8.4",
+      "name": "resilience4j",
+      "version": "2.8.4",
+      "purl": "pkg:maven/resilience4j@2.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jetty-server-2.8.7",
+      "name": "jetty-server",
+      "version": "2.8.7",
+      "purl": "pkg:maven/jetty-server@2.8.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-api-1.2.8",
+      "name": "opentelemetry-api",
+      "version": "1.2.8",
+      "purl": "pkg:maven/opentelemetry-api@1.2.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "numpy-3.11.5",
+      "name": "numpy",
+      "version": "3.11.5",
+      "purl": "pkg:maven/numpy@3.11.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "caffeine-1.3.3",
+      "name": "caffeine",
+      "version": "1.3.3",
+      "purl": "pkg:maven/caffeine@1.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpcore-2.5.4",
+      "name": "httpcore",
+      "version": "2.5.4",
+      "purl": "pkg:maven/httpcore@2.5.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gson-1.7.8",
+      "name": "gson",
+      "version": "1.7.8",
+      "purl": "pkg:maven/gson@1.7.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mapstruct-4.5.4",
+      "name": "mapstruct",
+      "version": "4.5.4",
+      "purl": "pkg:maven/mapstruct@4.5.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "log4j-core-3.1.4",
+      "name": "log4j-core",
+      "version": "3.1.4",
+      "purl": "pkg:maven/log4j-core@3.1.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "aws-sdk-sqs-2.1.1",
+      "name": "aws-sdk-sqs",
+      "version": "2.1.1",
+      "purl": "pkg:maven/aws-sdk-sqs@2.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "disruptor-2.11.2",
+      "name": "disruptor",
+      "version": "2.11.2",
+      "purl": "pkg:maven/disruptor@2.11.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "netty-all-3.5.6",
+      "name": "netty-all",
+      "version": "3.5.6",
+      "purl": "pkg:maven/netty-all@3.5.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "log4j-core-1.3.3",
+      "name": "log4j-core",
+      "version": "1.3.3",
+      "purl": "pkg:npm/log4j-core@1.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "netty-all-3.4.1",
+      "name": "netty-all",
+      "version": "3.4.1",
+      "purl": "pkg:npm/netty-all@3.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "netty-all-3.6.3",
+      "name": "netty-all",
+      "version": "3.6.3",
+      "purl": "pkg:npm/netty-all@3.6.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "aws-sdk-sqs-4.6.1",
+      "name": "aws-sdk-sqs",
+      "version": "4.6.1",
+      "purl": "pkg:npm/aws-sdk-sqs@4.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gson-3.8.5",
+      "name": "gson",
+      "version": "3.8.5",
+      "purl": "pkg:npm/gson@3.8.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mapstruct-1.10.4",
+      "name": "mapstruct",
+      "version": "1.10.4",
+      "purl": "pkg:npm/mapstruct@1.10.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-1.10.4",
+      "name": "axios",
+      "version": "1.10.4",
+      "purl": "pkg:npm/axios@1.10.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gson-1.7.0",
+      "name": "gson",
+      "version": "1.7.0",
+      "purl": "pkg:npm/gson@1.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-4.0.3",
+      "name": "setuptools",
+      "version": "4.0.3",
+      "purl": "pkg:npm/setuptools@4.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "numpy-4.1.5",
+      "name": "numpy",
+      "version": "4.1.5",
+      "purl": "pkg:npm/numpy@4.1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "gson-2.0.0",
+      "name": "gson",
+      "version": "2.0.0",
+      "purl": "pkg:npm/gson@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jetty-server-4.4.4",
+      "name": "jetty-server",
+      "version": "4.4.4",
+      "purl": "pkg:npm/jetty-server@4.4.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mapstruct-3.10.3",
+      "name": "mapstruct",
+      "version": "3.10.3",
+      "purl": "pkg:npm/mapstruct@3.10.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-4.0.0",
+      "name": "axios",
+      "version": "4.0.0",
+      "purl": "pkg:npm/axios@4.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-3.6.4",
+      "name": "setuptools",
+      "version": "3.6.4",
+      "purl": "pkg:npm/setuptools@3.6.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "resilience4j-1.4.5",
+      "name": "resilience4j",
+      "version": "1.4.5",
+      "purl": "pkg:npm/resilience4j@1.4.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-2.0.1",
+      "name": "axios",
+      "version": "2.0.1",
+      "purl": "pkg:npm/axios@2.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jetty-server-4.1.2",
+      "name": "jetty-server",
+      "version": "4.1.2",
+      "purl": "pkg:npm/jetty-server@4.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "caffeine-4.2.4",
+      "name": "caffeine",
+      "version": "4.2.4",
+      "purl": "pkg:npm/caffeine@4.2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "resilience4j-3.6.4",
+      "name": "resilience4j",
+      "version": "3.6.4",
+      "purl": "pkg:npm/resilience4j@3.6.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-4.5.0",
+      "name": "axios",
+      "version": "4.5.0",
+      "purl": "pkg:npm/axios@4.5.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "netty-all-2.5.2",
+      "name": "netty-all",
+      "version": "2.5.2",
+      "purl": "pkg:npm/netty-all@2.5.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "resilience4j-1.10.5",
+      "name": "resilience4j",
+      "version": "1.10.5",
+      "purl": "pkg:npm/resilience4j@1.10.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "disruptor-1.0.3",
+      "name": "disruptor",
+      "version": "1.0.3",
+      "purl": "pkg:npm/disruptor@1.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "disruptor-2.1.4",
+      "name": "disruptor",
+      "version": "2.1.4",
+      "purl": "pkg:npm/disruptor@2.1.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-4.1.5",
+      "name": "axios",
+      "version": "4.1.5",
+      "purl": "pkg:npm/axios@4.1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-api-4.9.0",
+      "name": "opentelemetry-api",
+      "version": "4.9.0",
+      "purl": "pkg:npm/opentelemetry-api@4.9.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "resilience4j-1.7.3",
+      "name": "resilience4j",
+      "version": "1.7.3",
+      "purl": "pkg:npm/resilience4j@1.7.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "disruptor-4.6.4",
+      "name": "disruptor",
+      "version": "4.6.4",
+      "purl": "pkg:npm/disruptor@4.6.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "disruptor-2.9.1",
+      "name": "disruptor",
+      "version": "2.9.1",
+      "purl": "pkg:npm/disruptor@2.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "ComplianceEngine-1.0.0",
+      "dependsOn": [
+        "aws-sdk-s3-4.14.7",
+        "mockito-core-5.11.1",
+        "guava-3.9.7",
+        "mysql-connector-java-2.15.0",
+        "tomcat-embed-core-5.4.2",
+        "lettuce-core-4.10.8",
+        "jedis-1.6.9",
+        "postgresql-jdbc-3.6.3",
+        "spring-security-core-4.0.8",
+        "mocha-2.9.6",
+        "commons-collections4-1.10.2",
+        "commander-5.7.7",
+        "boto3-1.8.8",
+        "logback-classic-3.5.3",
+        "hibernate-core-3.6.9",
+        "bouncycastle-bcprov-2.8.6",
+        "log4j-api-4.8.3",
+        "h2-database-4.15.6",
+        "spring-boot-starter-3.12.2",
+        "netty-handler-3.6.1",
+        "commons-codec-1.4.1",
+        "spring-web-1.8.10",
+        "junit-jupiter-3.13.6",
+        "grpc-core-4.6.5",
+        "commons-io-4.0.9",
+        "graphql-1.12.5",
+        "jackson-databind-4.2.1",
+        "micrometer-core-3.0.7",
+        "slf4j-api-3.11.6",
+        "commons-lang3-5.13.8",
+        "pgx-5.4.0",
+        "kafka-clients-3.9.6",
+        "hibernate-validator-2.7.7",
+        "jackson-annotations-3.0.1",
+        "logback-core-1.5.4",
+        "axios-3.12.5",
+        "setuptools-1.1.2",
+        "httpclient-3.9.6",
+        "resilience4j-2.8.4",
+        "jetty-server-2.8.7",
+        "opentelemetry-api-1.2.8",
+        "numpy-3.11.5",
+        "caffeine-1.3.3",
+        "httpcore-2.5.4",
+        "gson-1.7.8",
+        "mapstruct-4.5.4",
+        "log4j-core-3.1.4",
+        "aws-sdk-sqs-2.1.1",
+        "disruptor-2.11.2",
+        "netty-all-3.5.6"
+      ]
+    },
+    {
+      "ref": "aws-sdk-s3-4.14.7",
+      "dependsOn": [
+        "log4j-core-1.3.3"
+      ]
+    },
+    {
+      "ref": "guava-3.9.7",
+      "dependsOn": [
+        "netty-all-3.4.1"
+      ]
+    },
+    {
+      "ref": "mysql-connector-java-2.15.0",
+      "dependsOn": [
+        "netty-all-3.6.3"
+      ]
+    },
+    {
+      "ref": "tomcat-embed-core-5.4.2",
+      "dependsOn": [
+        "aws-sdk-sqs-4.6.1"
+      ]
+    },
+    {
+      "ref": "lettuce-core-4.10.8",
+      "dependsOn": [
+        "gson-3.8.5",
+        "mapstruct-1.10.4"
+      ]
+    },
+    {
+      "ref": "jedis-1.6.9",
+      "dependsOn": [
+        "axios-1.10.4"
+      ]
+    },
+    {
+      "ref": "postgresql-jdbc-3.6.3",
+      "dependsOn": [
+        "gson-1.7.0"
+      ]
+    },
+    {
+      "ref": "commander-5.7.7",
+      "dependsOn": [
+        "setuptools-4.0.3"
+      ]
+    },
+    {
+      "ref": "boto3-1.8.8",
+      "dependsOn": [
+        "numpy-4.1.5"
+      ]
+    },
+    {
+      "ref": "logback-classic-3.5.3",
+      "dependsOn": [
+        "gson-2.0.0",
+        "jetty-server-4.4.4",
+        "mapstruct-3.10.3"
+      ]
+    },
+    {
+      "ref": "log4j-api-4.8.3",
+      "dependsOn": [
+        "axios-4.0.0"
+      ]
+    },
+    {
+      "ref": "h2-database-4.15.6",
+      "dependsOn": [
+        "setuptools-3.6.4"
+      ]
+    },
+    {
+      "ref": "spring-boot-starter-3.12.2",
+      "dependsOn": [
+        "resilience4j-1.4.5"
+      ]
+    },
+    {
+      "ref": "netty-handler-3.6.1",
+      "dependsOn": [
+        "axios-2.0.1",
+        "jetty-server-4.1.2",
+        "caffeine-4.2.4"
+      ]
+    },
+    {
+      "ref": "junit-jupiter-3.13.6",
+      "dependsOn": [
+        "resilience4j-3.6.4",
+        "axios-4.5.0"
+      ]
+    },
+    {
+      "ref": "grpc-core-4.6.5",
+      "dependsOn": [
+        "netty-all-2.5.2",
+        "resilience4j-1.10.5",
+        "disruptor-1.0.3"
+      ]
+    },
+    {
+      "ref": "commons-io-4.0.9",
+      "dependsOn": [
+        "disruptor-2.1.4",
+        "axios-4.1.5",
+        "opentelemetry-api-4.9.0"
+      ]
+    },
+    {
+      "ref": "jackson-databind-4.2.1",
+      "dependsOn": [
+        "resilience4j-1.7.3",
+        "disruptor-4.6.4"
+      ]
+    },
+    {
+      "ref": "micrometer-core-3.0.7",
+      "dependsOn": [
+        "disruptor-2.9.1"
+      ]
+    }
+  ]
+}

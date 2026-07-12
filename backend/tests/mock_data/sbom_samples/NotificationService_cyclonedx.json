@@ -1,0 +1,1314 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-01-01T00:00:00Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "NotificationService-1.0.0",
+      "name": "NotificationService",
+      "version": "1.0.0",
+      "purl": "pkg:application/NotificationService@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "react-dom-1.10.9",
+      "name": "react-dom",
+      "version": "1.10.9",
+      "purl": "pkg:npm/react-dom@1.10.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "yaml-go-5.15.0",
+      "name": "yaml-go",
+      "version": "5.15.0",
+      "purl": "pkg:npm/yaml-go@5.15.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jest-3.13.6",
+      "name": "jest",
+      "version": "3.13.6",
+      "purl": "pkg:npm/jest@3.13.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cryptography-3.6.0",
+      "name": "cryptography",
+      "version": "3.6.0",
+      "purl": "pkg:npm/cryptography@3.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "redis-5.1.1",
+      "name": "redis",
+      "version": "5.1.1",
+      "purl": "pkg:npm/redis@5.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "next-2.13.7",
+      "name": "next",
+      "version": "2.13.7",
+      "purl": "pkg:npm/next@2.13.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "ansible-core-2.8.10",
+      "name": "ansible-core",
+      "version": "2.8.10",
+      "purl": "pkg:npm/ansible-core@2.8.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "sharp-1.14.0",
+      "name": "sharp",
+      "version": "1.14.0",
+      "purl": "pkg:npm/sharp@1.14.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "axios-4.14.1",
+      "name": "axios",
+      "version": "4.14.1",
+      "purl": "pkg:npm/axios@4.14.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "winston-2.2.10",
+      "name": "winston",
+      "version": "2.2.10",
+      "purl": "pkg:npm/winston@2.2.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "babel-core-5.0.0",
+      "name": "babel-core",
+      "version": "5.0.0",
+      "purl": "pkg:npm/babel-core@5.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "chalk-3.6.10",
+      "name": "chalk",
+      "version": "3.6.10",
+      "purl": "pkg:npm/chalk@3.6.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "twisted-5.3.5",
+      "name": "twisted",
+      "version": "5.3.5",
+      "purl": "pkg:npm/twisted@5.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nanoid-2.3.5",
+      "name": "nanoid",
+      "version": "2.3.5",
+      "purl": "pkg:npm/nanoid@2.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "UNKNOWN"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "inquirer-5.11.0",
+      "name": "inquirer",
+      "version": "5.11.0",
+      "purl": "pkg:npm/inquirer@5.11.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mocha-3.5.10",
+      "name": "mocha",
+      "version": "3.5.10",
+      "purl": "pkg:npm/mocha@3.5.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "vue-5.14.6",
+      "name": "vue",
+      "version": "5.14.6",
+      "purl": "pkg:npm/vue@5.14.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "puppeteer-1.9.3",
+      "name": "puppeteer",
+      "version": "1.9.3",
+      "purl": "pkg:npm/puppeteer@1.9.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "postgresql-jdbc-2.12.3",
+      "name": "postgresql-jdbc",
+      "version": "2.12.3",
+      "purl": "pkg:npm/postgresql-jdbc@2.12.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "socket.io-5.13.10",
+      "name": "socket.io",
+      "version": "5.13.10",
+      "purl": "pkg:npm/socket.io@5.13.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "sequelize-2.12.8",
+      "name": "sequelize",
+      "version": "2.12.8",
+      "purl": "pkg:npm/sequelize@2.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dayjs-2.4.1",
+      "name": "dayjs",
+      "version": "2.4.1",
+      "purl": "pkg:npm/dayjs@2.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "chai-2.7.6",
+      "name": "chai",
+      "version": "2.7.6",
+      "purl": "pkg:npm/chai@2.7.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "graphql-1.11.6",
+      "name": "graphql",
+      "version": "1.11.6",
+      "purl": "pkg:npm/graphql@1.11.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "commander-3.12.7",
+      "name": "commander",
+      "version": "3.12.7",
+      "purl": "pkg:npm/commander@3.12.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "morgan-4.11.6",
+      "name": "morgan",
+      "version": "4.11.6",
+      "purl": "pkg:npm/morgan@4.11.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "django-3.15.10",
+      "name": "django",
+      "version": "3.15.10",
+      "purl": "pkg:npm/django@3.15.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "multer-2.8.9",
+      "name": "multer",
+      "version": "2.8.9",
+      "purl": "pkg:npm/multer@2.8.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uuid-5.6.6",
+      "name": "uuid",
+      "version": "5.6.6",
+      "purl": "pkg:npm/uuid@5.6.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "lodash-2.12.4",
+      "name": "lodash",
+      "version": "2.12.4",
+      "purl": "pkg:npm/lodash@2.12.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "webpack-4.13.10",
+      "name": "webpack",
+      "version": "4.13.10",
+      "purl": "pkg:npm/webpack@4.13.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "helmet-2.6.0",
+      "name": "helmet",
+      "version": "2.6.0",
+      "purl": "pkg:npm/helmet@2.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "knex-1.7.7",
+      "name": "knex",
+      "version": "1.7.7",
+      "purl": "pkg:npm/knex@1.7.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "express-5.0.6",
+      "name": "express",
+      "version": "5.0.6",
+      "purl": "pkg:npm/express@5.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "passport-2.11.10",
+      "name": "passport",
+      "version": "2.11.10",
+      "purl": "pkg:npm/passport@2.11.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "node-fetch-4.11.2",
+      "name": "node-fetch",
+      "version": "4.11.2",
+      "purl": "pkg:npm/node-fetch@4.11.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "moment-4.10.3",
+      "name": "moment",
+      "version": "4.10.3",
+      "purl": "pkg:npm/moment@4.10.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cors-1.10.5",
+      "name": "cors",
+      "version": "1.10.5",
+      "purl": "pkg:npm/cors@1.10.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "react-2.9.7",
+      "name": "react",
+      "version": "2.9.7",
+      "purl": "pkg:npm/react@2.9.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mapstruct-1.11.6",
+      "name": "mapstruct",
+      "version": "1.11.6",
+      "purl": "pkg:npm/mapstruct@1.11.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "formidable-1.2.7",
+      "name": "formidable",
+      "version": "1.2.7",
+      "purl": "pkg:npm/formidable@1.2.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pm2-2.7.1",
+      "name": "pm2",
+      "version": "2.7.1",
+      "purl": "pkg:npm/pm2@2.7.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "prettier-1.1.6",
+      "name": "prettier",
+      "version": "1.1.6",
+      "purl": "pkg:npm/prettier@1.1.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "UNKNOWN"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dotenv-3.3.4",
+      "name": "dotenv",
+      "version": "3.3.4",
+      "purl": "pkg:npm/dotenv@3.3.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nodemon-4.1.5",
+      "name": "nodemon",
+      "version": "4.1.5",
+      "purl": "pkg:npm/nodemon@4.1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "eslint-4.11.6",
+      "name": "eslint",
+      "version": "4.11.6",
+      "purl": "pkg:npm/eslint@4.11.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Dual-MIT/Commercial"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonwebtoken-3.1.1",
+      "name": "jsonwebtoken",
+      "version": "3.1.1",
+      "purl": "pkg:npm/jsonwebtoken@3.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "angular-core-3.2.5",
+      "name": "angular-core",
+      "version": "3.2.5",
+      "purl": "pkg:npm/angular-core@3.2.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-2.6.6",
+      "name": "bcrypt",
+      "version": "2.6.6",
+      "purl": "pkg:npm/bcrypt@2.6.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nats-2.1.6",
+      "name": "nats",
+      "version": "2.1.6",
+      "purl": "pkg:npm/nats@2.1.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "moment-4.0.2",
+      "name": "moment",
+      "version": "4.0.2",
+      "purl": "pkg:npm/moment@4.0.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-2.4.3",
+      "name": "bcrypt",
+      "version": "2.4.3",
+      "purl": "pkg:npm/bcrypt@2.4.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "react-4.2.4",
+      "name": "react",
+      "version": "4.2.4",
+      "purl": "pkg:npm/react@4.2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cors-3.9.1",
+      "name": "cors",
+      "version": "3.9.1",
+      "purl": "pkg:npm/cors@3.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nodemon-4.7.3",
+      "name": "nodemon",
+      "version": "4.7.3",
+      "purl": "pkg:npm/nodemon@4.7.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-2.6.1",
+      "name": "bcrypt",
+      "version": "2.6.1",
+      "purl": "pkg:npm/bcrypt@2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pm2-1.5.0",
+      "name": "pm2",
+      "version": "1.5.0",
+      "purl": "pkg:npm/pm2@1.5.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "angular-core-1.8.2",
+      "name": "angular-core",
+      "version": "1.8.2",
+      "purl": "pkg:npm/angular-core@1.8.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dotenv-4.7.1",
+      "name": "dotenv",
+      "version": "4.7.1",
+      "purl": "pkg:npm/dotenv@4.7.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pm2-1.4.0",
+      "name": "pm2",
+      "version": "1.4.0",
+      "purl": "pkg:npm/pm2@1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "node-fetch-2.5.5",
+      "name": "node-fetch",
+      "version": "2.5.5",
+      "purl": "pkg:npm/node-fetch@2.5.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cors-1.9.0",
+      "name": "cors",
+      "version": "1.9.0",
+      "purl": "pkg:npm/cors@1.9.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-2.4.0",
+      "name": "bcrypt",
+      "version": "2.4.0",
+      "purl": "pkg:npm/bcrypt@2.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dotenv-4.0.5",
+      "name": "dotenv",
+      "version": "4.0.5",
+      "purl": "pkg:npm/dotenv@4.0.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "react-1.6.5",
+      "name": "react",
+      "version": "1.6.5",
+      "purl": "pkg:npm/react@1.6.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "prettier-2.1.5",
+      "name": "prettier",
+      "version": "2.1.5",
+      "purl": "pkg:npm/prettier@2.1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "angular-core-2.4.0",
+      "name": "angular-core",
+      "version": "2.4.0",
+      "purl": "pkg:npm/angular-core@2.4.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bcrypt-3.10.5",
+      "name": "bcrypt",
+      "version": "3.10.5",
+      "purl": "pkg:npm/bcrypt@3.10.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "prettier-3.2.5",
+      "name": "prettier",
+      "version": "3.2.5",
+      "purl": "pkg:npm/prettier@3.2.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "angular-core-1.6.3",
+      "name": "angular-core",
+      "version": "1.6.3",
+      "purl": "pkg:npm/angular-core@1.6.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "prettier-1.4.4",
+      "name": "prettier",
+      "version": "1.4.4",
+      "purl": "pkg:npm/prettier@1.4.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "react-2.0.0",
+      "name": "react",
+      "version": "2.0.0",
+      "purl": "pkg:npm/react@2.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "cors-3.7.3",
+      "name": "cors",
+      "version": "3.7.3",
+      "purl": "pkg:npm/cors@3.7.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nodemon-2.3.3",
+      "name": "nodemon",
+      "version": "2.3.3",
+      "purl": "pkg:npm/nodemon@2.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nats-3.10.5",
+      "name": "nats",
+      "version": "3.10.5",
+      "purl": "pkg:npm/nats@3.10.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "node-fetch-1.10.5",
+      "name": "node-fetch",
+      "version": "1.10.5",
+      "purl": "pkg:npm/node-fetch@1.10.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "moment-4.6.5",
+      "name": "moment",
+      "version": "4.6.5",
+      "purl": "pkg:npm/moment@4.6.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nodemon-4.1.0",
+      "name": "nodemon",
+      "version": "4.1.0",
+      "purl": "pkg:npm/nodemon@4.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "mapstruct-3.2.2",
+      "name": "mapstruct",
+      "version": "3.2.2",
+      "purl": "pkg:npm/mapstruct@3.2.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "dotenv-1.7.4",
+      "name": "dotenv",
+      "version": "1.7.4",
+      "purl": "pkg:npm/dotenv@1.7.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unknown"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "NotificationService-1.0.0",
+      "dependsOn": [
+        "react-dom-1.10.9",
+        "yaml-go-5.15.0",
+        "jest-3.13.6",
+        "cryptography-3.6.0",
+        "redis-5.1.1",
+        "next-2.13.7",
+        "ansible-core-2.8.10",
+        "sharp-1.14.0",
+        "axios-4.14.1",
+        "winston-2.2.10",
+        "babel-core-5.0.0",
+        "chalk-3.6.10",
+        "twisted-5.3.5",
+        "nanoid-2.3.5",
+        "inquirer-5.11.0",
+        "mocha-3.5.10",
+        "vue-5.14.6",
+        "puppeteer-1.9.3",
+        "postgresql-jdbc-2.12.3",
+        "socket.io-5.13.10",
+        "sequelize-2.12.8",
+        "dayjs-2.4.1",
+        "chai-2.7.6",
+        "graphql-1.11.6",
+        "commander-3.12.7",
+        "morgan-4.11.6",
+        "django-3.15.10",
+        "multer-2.8.9",
+        "uuid-5.6.6",
+        "lodash-2.12.4",
+        "webpack-4.13.10",
+        "helmet-2.6.0",
+        "knex-1.7.7",
+        "express-5.0.6",
+        "passport-2.11.10",
+        "node-fetch-4.11.2",
+        "moment-4.10.3",
+        "cors-1.10.5",
+        "react-2.9.7",
+        "mapstruct-1.11.6",
+        "formidable-1.2.7",
+        "pm2-2.7.1",
+        "prettier-1.1.6",
+        "dotenv-3.3.4",
+        "nodemon-4.1.5",
+        "eslint-4.11.6",
+        "jsonwebtoken-3.1.1",
+        "angular-core-3.2.5",
+        "bcrypt-2.6.6",
+        "nats-2.1.6"
+      ]
+    },
+    {
+      "ref": "yaml-go-5.15.0",
+      "dependsOn": [
+        "moment-4.0.2"
+      ]
+    },
+    {
+      "ref": "jest-3.13.6",
+      "dependsOn": [
+        "bcrypt-2.4.3",
+        "react-4.2.4",
+        "cors-3.9.1"
+      ]
+    },
+    {
+      "ref": "cryptography-3.6.0",
+      "dependsOn": [
+        "nodemon-4.7.3"
+      ]
+    },
+    {
+      "ref": "redis-5.1.1",
+      "dependsOn": [
+        "bcrypt-2.6.1"
+      ]
+    },
+    {
+      "ref": "ansible-core-2.8.10",
+      "dependsOn": [
+        "pm2-1.5.0",
+        "angular-core-1.8.2",
+        "dotenv-4.7.1"
+      ]
+    },
+    {
+      "ref": "sharp-1.14.0",
+      "dependsOn": [
+        "pm2-1.4.0",
+        "node-fetch-2.5.5"
+      ]
+    },
+    {
+      "ref": "axios-4.14.1",
+      "dependsOn": [
+        "cors-1.9.0",
+        "bcrypt-2.4.0"
+      ]
+    },
+    {
+      "ref": "winston-2.2.10",
+      "dependsOn": [
+        "dotenv-4.0.5",
+        "react-1.6.5"
+      ]
+    },
+    {
+      "ref": "nanoid-2.3.5",
+      "dependsOn": [
+        "prettier-2.1.5"
+      ]
+    },
+    {
+      "ref": "inquirer-5.11.0",
+      "dependsOn": [
+        "angular-core-2.4.0",
+        "bcrypt-3.10.5"
+      ]
+    },
+    {
+      "ref": "dayjs-2.4.1",
+      "dependsOn": [
+        "prettier-3.2.5"
+      ]
+    },
+    {
+      "ref": "graphql-1.11.6",
+      "dependsOn": [
+        "angular-core-1.6.3",
+        "prettier-1.4.4"
+      ]
+    },
+    {
+      "ref": "commander-3.12.7",
+      "dependsOn": [
+        "react-2.0.0",
+        "cors-3.7.3"
+      ]
+    },
+    {
+      "ref": "morgan-4.11.6",
+      "dependsOn": [
+        "nodemon-2.3.3"
+      ]
+    },
+    {
+      "ref": "django-3.15.10",
+      "dependsOn": [
+        "nats-3.10.5"
+      ]
+    },
+    {
+      "ref": "multer-2.8.9",
+      "dependsOn": [
+        "node-fetch-1.10.5",
+        "moment-4.6.5"
+      ]
+    },
+    {
+      "ref": "uuid-5.6.6",
+      "dependsOn": [
+        "nodemon-4.1.0",
+        "mapstruct-3.2.2"
+      ]
+    },
+    {
+      "ref": "webpack-4.13.10",
+      "dependsOn": [
+        "dotenv-1.7.4"
+      ]
+    }
+  ]
+}

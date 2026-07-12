@@ -1,0 +1,3 @@
+library_name,version,ecosystem,license,parent_name,parent_version
+jsonwebtoken,9.0.0,npm,MIT,CustomerPortal,1.2.0
+ms,2.1.3,npm,MIT,CustomerPortal,1.2.0

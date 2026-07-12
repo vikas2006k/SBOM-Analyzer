@@ -1,0 +1,968 @@
+{
+  "application_name": "NotificationService",
+  "application_version": "1.0.0",
+  "libraries": [
+    {
+      "name": "react-dom",
+      "version": "1.10.9",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "yaml-go",
+      "version": "5.15.0",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "jest",
+      "version": "3.13.6",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "cryptography",
+      "version": "3.6.0",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "redis",
+      "version": "5.1.1",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "next",
+      "version": "2.13.7",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "ansible-core",
+      "version": "2.8.10",
+      "ecosystem": "npm",
+      "license": "LGPL-3.0"
+    },
+    {
+      "name": "sharp",
+      "version": "1.14.0",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "axios",
+      "version": "4.14.1",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "winston",
+      "version": "2.2.10",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "babel-core",
+      "version": "5.0.0",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "chalk",
+      "version": "3.6.10",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "twisted",
+      "version": "5.3.5",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "nanoid",
+      "version": "2.3.5",
+      "ecosystem": "npm",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "inquirer",
+      "version": "5.11.0",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "mocha",
+      "version": "3.5.10",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "vue",
+      "version": "5.14.6",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "puppeteer",
+      "version": "1.9.3",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "postgresql-jdbc",
+      "version": "2.12.3",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "socket.io",
+      "version": "5.13.10",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "sequelize",
+      "version": "2.12.8",
+      "ecosystem": "npm",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "dayjs",
+      "version": "2.4.1",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "chai",
+      "version": "2.7.6",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "graphql",
+      "version": "1.11.6",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "commander",
+      "version": "3.12.7",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "morgan",
+      "version": "4.11.6",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "django",
+      "version": "3.15.10",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "multer",
+      "version": "2.8.9",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "uuid",
+      "version": "5.6.6",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "lodash",
+      "version": "2.12.4",
+      "ecosystem": "npm",
+      "license": "GPL-2.0"
+    },
+    {
+      "name": "webpack",
+      "version": "4.13.10",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "helmet",
+      "version": "2.6.0",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "knex",
+      "version": "1.7.7",
+      "ecosystem": "npm",
+      "license": "LGPL-2.1"
+    },
+    {
+      "name": "express",
+      "version": "5.0.6",
+      "ecosystem": "npm",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "passport",
+      "version": "2.11.10",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "node-fetch",
+      "version": "4.11.2",
+      "ecosystem": "npm",
+      "license": "ISC"
+    },
+    {
+      "name": "moment",
+      "version": "4.10.3",
+      "ecosystem": "npm",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "cors",
+      "version": "1.10.5",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "react",
+      "version": "2.9.7",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "mapstruct",
+      "version": "1.11.6",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "formidable",
+      "version": "1.2.7",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "pm2",
+      "version": "2.7.1",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "prettier",
+      "version": "1.1.6",
+      "ecosystem": "npm",
+      "license": "UNKNOWN"
+    },
+    {
+      "name": "dotenv",
+      "version": "3.3.4",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "nodemon",
+      "version": "4.1.5",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "eslint",
+      "version": "4.11.6",
+      "ecosystem": "npm",
+      "license": "Dual-MIT/Commercial"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "3.1.1",
+      "ecosystem": "npm",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "angular-core",
+      "version": "3.2.5",
+      "ecosystem": "npm",
+      "license": "MIT"
+    },
+    {
+      "name": "bcrypt",
+      "version": "2.6.6",
+      "ecosystem": "npm",
+      "license": "Unlicense"
+    },
+    {
+      "name": "nats",
+      "version": "2.1.6",
+      "ecosystem": "npm",
+      "license": "GPL-3.0"
+    },
+    {
+      "name": "moment",
+      "version": "4.0.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bcrypt",
+      "version": "2.4.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "react",
+      "version": "4.2.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "cors",
+      "version": "3.9.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "nodemon",
+      "version": "4.7.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bcrypt",
+      "version": "2.6.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "pm2",
+      "version": "1.5.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "angular-core",
+      "version": "1.8.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "dotenv",
+      "version": "4.7.1",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "pm2",
+      "version": "1.4.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "node-fetch",
+      "version": "2.5.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "cors",
+      "version": "1.9.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bcrypt",
+      "version": "2.4.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "dotenv",
+      "version": "4.0.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "react",
+      "version": "1.6.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "prettier",
+      "version": "2.1.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "angular-core",
+      "version": "2.4.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "bcrypt",
+      "version": "3.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "prettier",
+      "version": "3.2.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "angular-core",
+      "version": "1.6.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "prettier",
+      "version": "1.4.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "react",
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "cors",
+      "version": "3.7.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "nodemon",
+      "version": "2.3.3",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "nats",
+      "version": "3.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "node-fetch",
+      "version": "1.10.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "moment",
+      "version": "4.6.5",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "nodemon",
+      "version": "4.1.0",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "mapstruct",
+      "version": "3.2.2",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    },
+    {
+      "name": "dotenv",
+      "version": "1.7.4",
+      "ecosystem": "npm",
+      "license": "Unknown"
+    }
+  ],
+  "dependencies": [
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "react-dom",
+      "child_version": "1.10.9"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "yaml-go",
+      "child_version": "5.15.0"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "jest",
+      "child_version": "3.13.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "cryptography",
+      "child_version": "3.6.0"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "redis",
+      "child_version": "5.1.1"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "next",
+      "child_version": "2.13.7"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "ansible-core",
+      "child_version": "2.8.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "sharp",
+      "child_version": "1.14.0"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "axios",
+      "child_version": "4.14.1"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "winston",
+      "child_version": "2.2.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "babel-core",
+      "child_version": "5.0.0"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "chalk",
+      "child_version": "3.6.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "twisted",
+      "child_version": "5.3.5"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "nanoid",
+      "child_version": "2.3.5"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "inquirer",
+      "child_version": "5.11.0"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "mocha",
+      "child_version": "3.5.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "vue",
+      "child_version": "5.14.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "puppeteer",
+      "child_version": "1.9.3"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "postgresql-jdbc",
+      "child_version": "2.12.3"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "socket.io",
+      "child_version": "5.13.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "sequelize",
+      "child_version": "2.12.8"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "dayjs",
+      "child_version": "2.4.1"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "chai",
+      "child_version": "2.7.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "graphql",
+      "child_version": "1.11.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "commander",
+      "child_version": "3.12.7"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "morgan",
+      "child_version": "4.11.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "django",
+      "child_version": "3.15.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "multer",
+      "child_version": "2.8.9"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "uuid",
+      "child_version": "5.6.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "lodash",
+      "child_version": "2.12.4"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "webpack",
+      "child_version": "4.13.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "helmet",
+      "child_version": "2.6.0"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "knex",
+      "child_version": "1.7.7"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "express",
+      "child_version": "5.0.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "passport",
+      "child_version": "2.11.10"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "node-fetch",
+      "child_version": "4.11.2"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "moment",
+      "child_version": "4.10.3"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "cors",
+      "child_version": "1.10.5"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "react",
+      "child_version": "2.9.7"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "mapstruct",
+      "child_version": "1.11.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "formidable",
+      "child_version": "1.2.7"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "pm2",
+      "child_version": "2.7.1"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "prettier",
+      "child_version": "1.1.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "dotenv",
+      "child_version": "3.3.4"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "nodemon",
+      "child_version": "4.1.5"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "eslint",
+      "child_version": "4.11.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "jsonwebtoken",
+      "child_version": "3.1.1"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "angular-core",
+      "child_version": "3.2.5"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "bcrypt",
+      "child_version": "2.6.6"
+    },
+    {
+      "parent_name": "NotificationService",
+      "parent_version": "1.0.0",
+      "child_name": "nats",
+      "child_version": "2.1.6"
+    },
+    {
+      "parent_name": "yaml-go",
+      "parent_version": "5.15.0",
+      "child_name": "moment",
+      "child_version": "4.0.2"
+    },
+    {
+      "parent_name": "jest",
+      "parent_version": "3.13.6",
+      "child_name": "bcrypt",
+      "child_version": "2.4.3"
+    },
+    {
+      "parent_name": "jest",
+      "parent_version": "3.13.6",
+      "child_name": "react",
+      "child_version": "4.2.4"
+    },
+    {
+      "parent_name": "jest",
+      "parent_version": "3.13.6",
+      "child_name": "cors",
+      "child_version": "3.9.1"
+    },
+    {
+      "parent_name": "cryptography",
+      "parent_version": "3.6.0",
+      "child_name": "nodemon",
+      "child_version": "4.7.3"
+    },
+    {
+      "parent_name": "redis",
+      "parent_version": "5.1.1",
+      "child_name": "bcrypt",
+      "child_version": "2.6.1"
+    },
+    {
+      "parent_name": "ansible-core",
+      "parent_version": "2.8.10",
+      "child_name": "pm2",
+      "child_version": "1.5.0"
+    },
+    {
+      "parent_name": "ansible-core",
+      "parent_version": "2.8.10",
+      "child_name": "angular-core",
+      "child_version": "1.8.2"
+    },
+    {
+      "parent_name": "ansible-core",
+      "parent_version": "2.8.10",
+      "child_name": "dotenv",
+      "child_version": "4.7.1"
+    },
+    {
+      "parent_name": "sharp",
+      "parent_version": "1.14.0",
+      "child_name": "pm2",
+      "child_version": "1.4.0"
+    },
+    {
+      "parent_name": "sharp",
+      "parent_version": "1.14.0",
+      "child_name": "node-fetch",
+      "child_version": "2.5.5"
+    },
+    {
+      "parent_name": "axios",
+      "parent_version": "4.14.1",
+      "child_name": "cors",
+      "child_version": "1.9.0"
+    },
+    {
+      "parent_name": "axios",
+      "parent_version": "4.14.1",
+      "child_name": "bcrypt",
+      "child_version": "2.4.0"
+    },
+    {
+      "parent_name": "winston",
+      "parent_version": "2.2.10",
+      "child_name": "dotenv",
+      "child_version": "4.0.5"
+    },
+    {
+      "parent_name": "winston",
+      "parent_version": "2.2.10",
+      "child_name": "react",
+      "child_version": "1.6.5"
+    },
+    {
+      "parent_name": "nanoid",
+      "parent_version": "2.3.5",
+      "child_name": "prettier",
+      "child_version": "2.1.5"
+    },
+    {
+      "parent_name": "inquirer",
+      "parent_version": "5.11.0",
+      "child_name": "angular-core",
+      "child_version": "2.4.0"
+    },
+    {
+      "parent_name": "inquirer",
+      "parent_version": "5.11.0",
+      "child_name": "bcrypt",
+      "child_version": "3.10.5"
+    },
+    {
+      "parent_name": "dayjs",
+      "parent_version": "2.4.1",
+      "child_name": "prettier",
+      "child_version": "3.2.5"
+    },
+    {
+      "parent_name": "graphql",
+      "parent_version": "1.11.6",
+      "child_name": "angular-core",
+      "child_version": "1.6.3"
+    },
+    {
+      "parent_name": "graphql",
+      "parent_version": "1.11.6",
+      "child_name": "prettier",
+      "child_version": "1.4.4"
+    },
+    {
+      "parent_name": "commander",
+      "parent_version": "3.12.7",
+      "child_name": "react",
+      "child_version": "2.0.0"
+    },
+    {
+      "parent_name": "commander",
+      "parent_version": "3.12.7",
+      "child_name": "cors",
+      "child_version": "3.7.3"
+    },
+    {
+      "parent_name": "morgan",
+      "parent_version": "4.11.6",
+      "child_name": "nodemon",
+      "child_version": "2.3.3"
+    },
+    {
+      "parent_name": "django",
+      "parent_version": "3.15.10",
+      "child_name": "nats",
+      "child_version": "3.10.5"
+    },
+    {
+      "parent_name": "multer",
+      "parent_version": "2.8.9",
+      "child_name": "node-fetch",
+      "child_version": "1.10.5"
+    },
+    {
+      "parent_name": "multer",
+      "parent_version": "2.8.9",
+      "child_name": "moment",
+      "child_version": "4.6.5"
+    },
+    {
+      "parent_name": "uuid",
+      "parent_version": "5.6.6",
+      "child_name": "nodemon",
+      "child_version": "4.1.0"
+    },
+    {
+      "parent_name": "uuid",
+      "parent_version": "5.6.6",
+      "child_name": "mapstruct",
+      "child_version": "3.2.2"
+    },
+    {
+      "parent_name": "webpack",
+      "parent_version": "4.13.10",
+      "child_name": "dotenv",
+      "child_version": "1.7.4"
+    }
+  ]
+}
