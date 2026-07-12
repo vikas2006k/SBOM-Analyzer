@@ -20,10 +20,15 @@ const ApplicationDetails = ({ activeAppId }) => {
     const loadDependencies = async () => {
       if (!activeAppId) return;
       setLoading(true);
+      // Reset all filters for the new application
+      setSearch('');
+      setEcosystemFilter('All');
+      setTypeFilter('All');
+      setSortBy('name');
+      setCurrentPage(1);
       try {
         const res = await appAPI.getApplicationDependencies(activeAppId);
         setDependencies(res.data.data || []);
-        setCurrentPage(1);
       } catch (err) {
         console.error(err);
       } finally {
