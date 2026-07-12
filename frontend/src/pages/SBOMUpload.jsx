@@ -77,9 +77,14 @@ const SBOMUpload = () => {
       setStatus('completed');
     } catch (err) {
       console.error("Ingestion failed:", err);
-      setStatus('failed');
-      const data = err.response?.data?.details || {};
-      setErrorDetails(data.errors || [err.response?.data?.message || "Internal Ingestion Parser Error."]);
+      const errorObj = err.response?.data?.error || {};
+      const details = errorObj.details || {};
+      const message = errorObj.message || "Internal Ingestion Parser Error.";
+      // Detect duplicate upload block vs real parse errors
+      const isDuplicate = message.toLowerCase().includes("already processed");
+      setStatus(isDuplicate ? 'duplicate' : 'failed');
+      const errorsList = details.errors || [message];
+      setErrorDetails(errorsList);
     } finally {
       setLoading(false);
     }
@@ -214,6 +219,22 @@ const SBOMUpload = () => {
                   </ul>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Duplicate file warning */}
+          {status === 'duplicate' && errorDetails && (
+            <div className="space-y-4">
+              <div className="flex items-center gap-2 text-amber-400">
+                <AlertOctagon size={20} />
+                <span className="font-bold text-sm">Already Processed</span>
+              </div>
+              <div className="border-t border-cyber-border pt-3 space-y-3">
+                <p className="text-[11px] text-slate-400 leading-relaxed">{errorDetails[0]}</p>
+                <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-3 text-[11px] text-amber-300 leading-relaxed">
+                  💡 <strong>Tip:</strong> To re-analyze, upload a new or updated version of this SBOM file, or select a different application target.
+                </div>
+              </div>
             </div>
           )}
 

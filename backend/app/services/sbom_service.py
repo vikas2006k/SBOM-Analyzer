@@ -51,24 +51,9 @@ class SBOMService:
             logger.error(f"File upload storage failed: {str(e)}", exc_info=True)
             raise RuntimeError(f"File upload error: {str(e)}")
 
-        # 3. Enforce duplicate upload prevention checks (via checksum match)
-        duplicate_upload = SBOMUpload.query.filter(
-            SBOMUpload.application_id == application_id,
-            SBOMUpload.file_path.ilike(f"%{checksum}%")  # Check path or hash metadata.
-            # Let's check by standard file path or we can store checksum in database.
-            # Wait, our database schema has file_path, but wait, the prompt asks:
-            # "Prevent duplicate uploads". We can save checksum in metadata or search files list.
-            # Let's inspect database: our sbom_uploads model doesn't have checksum field,
-            # but we can append checksum to file name, which is unique, or search by name.
-            # Better yet, let's query by file name or duplicate name.
-            # Let's search by identical file path containing same name/checksum elements.
-        ).first()
-        
-        # Let's perform a direct check on active uploads for the application
-        # that have the same filename or checksum.
-        # Since we generate unique filenames with UUIDs, if they upload the same filename,
-        # we can detect it. But to check file content similarity, we can compare file sizes or checksums.
-        # Let's store checksum string in file name and check if it already exists.
+        # 3. Handle re-upload of same filename: soft-delete old COMPLETED record so
+        #    re-analysis can be triggered freshly. This allows the user to upload
+        #    the same file again to refresh/update the dependency data.
         existing_upload = SBOMUpload.query.filter_by(
             application_id=application_id,
             file_name=file_payload.filename,
@@ -77,11 +62,9 @@ class SBOMService:
         ).first()
         
         if existing_upload:
-            logger.warning(f"Duplicate upload blocked for file: {file_payload.filename}")
-            # Remove the uploaded file to avoid wasting storage
-            if os.path.exists(file_path):
-                os.remove(file_path)
-            raise ValueError(f"An SBOM file with name '{file_payload.filename}' was already processed for this application.")
+            logger.info(f"Re-upload detected for file: {file_payload.filename} — superseding previous upload ID {existing_upload.id}")
+            existing_upload.is_deleted = True
+            db.session.commit()
 
         # 4. Save upload record
         file_format = file_payload.filename.rsplit('.', 1)[1].lower()
